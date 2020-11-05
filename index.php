@@ -24,6 +24,8 @@ $wynik = mysqli_query($conn, $sql);
 
     echo('</table>');
     
+echo("<br>");
+    
     
 $sql = "SELECT * FROM pracownicy where imie like '%a'";
 $wynik = mysqli_query($conn, $sql);
@@ -39,6 +41,8 @@ $wynik = mysqli_query($conn, $sql);
     }
 
     echo('</table>');
+    
+echo("<br>");
   
     
 $sql = "SELECT * FROM pracownicy where imie not like '%a'";
@@ -55,7 +59,8 @@ $wynik = mysqli_query($conn, $sql);
     }
 
     echo('</table>');
-
+    
+echo("<br>");
 
 ?>
     
