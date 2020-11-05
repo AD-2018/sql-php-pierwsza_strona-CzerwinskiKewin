@@ -1,3 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+    
 <?php
 require_once("connect.php");
 
@@ -19,3 +26,6 @@ $wynik = mysqli_query($conn, $sql);
 
 
 ?>
+    
+</body>
+</html>
