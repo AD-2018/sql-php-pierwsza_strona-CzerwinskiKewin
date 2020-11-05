@@ -5,6 +5,11 @@
 </head>
 <body>
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a>
+<div class="diw">
+    <a href="organizacjaPracownicy.php>org_prac</a>
+    <a href="funkcjeAgregujace.php>agr</a>
+</div>
+    
 <?php
 require_once("connect.php");
 
