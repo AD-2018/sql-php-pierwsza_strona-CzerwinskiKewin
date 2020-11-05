@@ -6,7 +6,7 @@
 <body>
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a>
 <div class="diw">
-    <a href="pracownicyOrganizacja.php>prac_org</a>
+    <a href="pracownicyOrganizacja.php">prac_org</a>
     <a href="funkcjeAgregujace.php>agr</a>
 </div>
     
