@@ -23,7 +23,7 @@ echo("<br>");
 $sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia FROM pracownicy,organizacja where id_org=dzial and (dzial=1 or dzial=4)";
 $wynik = mysqli_query($conn, $sql);
 
-    echo("Zadanie 5");
+    echo("Zadanie 2");
     echo('<table border="1">');
     echo('<th>Imie</th><th>nazwa_dzial</th><th>zarobki</th><th>data_urodzenia</th>');
 
@@ -42,7 +42,7 @@ echo("<br>");
 $sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia FROM pracownicy,organizacja where id_org=dzial and imie like '%a'";
 $wynik = mysqli_query($conn, $sql);
 
-    echo("Zadanie 4");
+    echo("Zadanie 3");
     echo('<table border="1">');
     echo('<th>Imie</th><th>nazwa_dzial</th><th>zarobki</th><th>data_urodzenia</th>');
 
@@ -76,7 +76,7 @@ $wynik = mysqli_query($conn, $sql);
     
 echo("<br>");
 echo("<br>");
-echo("<h1>Sortowanie</h1>")
+echo("<h1>Sortowanie</h1>");
 
 
 $sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia FROM pracownicy,organizacja where id_org=dzial order by imie desc";
