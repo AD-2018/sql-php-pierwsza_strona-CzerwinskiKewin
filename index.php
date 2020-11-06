@@ -16,5 +16,65 @@ echo("<h1>Kewin Czerwinski</h1>");
     <a href="funkcjeAgregujace.php">agr</a>
 </div>
     
+require_once("connect.php");
+
+$sql = "SELECT * FROM pracownicy where dzial=2";
+$wynik = mysqli_query($conn, $sql);
+
+    echo("Zadanie 1");
+    echo('<table border="1">');
+    echo('<th>Imie</th><th>zarobki</th>');
+
+    while($wiersz=mysqli_fetch_assoc($wynik))
+    {
+        echo('<tr>');
+        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['dzial'].'</td>'.'<td>'.$wiersz['zarobki'].'</td>'.'<td>'.$wiersz['data_urodzenia'].'</td>');
+        echo('</tr>');
+    }
+
+    echo('</table>');
+    
+echo("<br>");
+    
+require_once("connect.php");
+
+$sql = "SELECT * FROM pracownicy where (dzial=2 or dzial=3)";
+$wynik = mysqli_query($conn, $sql);
+
+    echo("Zadanie 2");
+    echo('<table border="1">');
+    echo('<th>Imie</th><th>zarobki</th>');
+
+    while($wiersz=mysqli_fetch_assoc($wynik))
+    {
+        echo('<tr>');
+        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['dzial'].'</td>'.'<td>'.$wiersz['zarobki'].'</td>'.'<td>'.$wiersz['data_urodzenia'].'</td>');
+        echo('</tr>');
+    }
+
+    echo('</table>');
+    
+echo("<br>");
+    
+require_once("connect.php");
+
+$sql = "SELECT * FROM pracownicy where zarobki<30";
+$wynik = mysqli_query($conn, $sql);
+
+    echo("Zadanie 3");
+    echo('<table border="1">');
+    echo('<th>Imie</th><th>zarobki</th>');
+
+    while($wiersz=mysqli_fetch_assoc($wynik))
+    {
+        echo('<tr>');
+        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['dzial'].'</td>'.'<td>'.$wiersz['zarobki'].'</td>'.'<td>'.$wiersz['data_urodzenia'].'</td>');
+        echo('</tr>');
+    }
+
+    echo('</table>');
+    
+echo("<br>");
+    
 </body>
 </html>
