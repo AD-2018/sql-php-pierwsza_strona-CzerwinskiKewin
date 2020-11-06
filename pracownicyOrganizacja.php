@@ -1,3 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<div class="diw">
+    <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a>
+    <a href="pracownicyOrganizacja.php">Pracownicy i Organizacja</a>
+    <a href="funkcjeAgregujace.php">Funkcje Agregujace</a>
+</div>
 <?php
 require_once("connect.php");
     
@@ -155,7 +167,7 @@ $wynik = mysqli_query($conn, $sql);
 echo("<br>");
 
 
-$sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia FROM pracownicy,organizacja where id_org=dzial and imie not like '%a' and order by nazwa_dzial asc, zarobki asc";
+$sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia FROM pracownicy,organizacja where id_org=dzial and imie not like '%a' and order by nazwa_dzial asc"; //zarobki asc
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie sortowanie 5");
@@ -174,3 +186,6 @@ $wynik = mysqli_query($conn, $sql);
 echo("<br>");
 
 ?>
+
+</body>
+</html>
