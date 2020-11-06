@@ -8,7 +8,7 @@
 <div class="diw">
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a>
     <a href="index.php">Strona Główna</a>
-    <a href="funkcjeAgregujace.php">Funkcje Agregujace</a>
+    <a href="funkcjeAgregujace.php">Funkcje Agregujące</a>
 </div>
 <?php
 require_once("connect.php");
