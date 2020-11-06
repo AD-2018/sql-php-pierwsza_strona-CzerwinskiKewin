@@ -167,7 +167,7 @@ $wynik = mysqli_query($conn, $sql);
 echo("<br>");
 
 
-$sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia FROM pracownicy,organizacja where id_org=dzial and imie not like '%a' and order by nazwa_dzial asc"; //zarobki asc
+$sql = "SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie not like '%a' order by nazwa_dzial asc, zarobki asc"; //zarobki asc
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie sortowanie 5");
