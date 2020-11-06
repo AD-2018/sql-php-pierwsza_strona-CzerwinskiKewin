@@ -8,12 +8,12 @@
 <div class="diw">
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a>
     <a href="pracownicyOrganizacja.php">Pracownicy i Organizacja</a>
-    <a href="funkcjeAgregujace.php">Funkcje Agregujace</a>
+    <a href="funkcjeAgregujace.php">Funkcje Agregujące</a>
 </div>
     
 <?php
     
-echo("<h1>Kewin Czerwinski</h1>");
+echo("<h1>Kewin Czerwiński</h1>");
     
 require_once("connect.php");
 
