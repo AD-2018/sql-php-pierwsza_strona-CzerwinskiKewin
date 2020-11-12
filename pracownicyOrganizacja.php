@@ -15,7 +15,8 @@ require_once("connect.php");
     
 $sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia FROM pracownicy,organizacja where id_org=dzial";
 $wynik = mysqli_query($conn, $sql);
-
+    
+    echo("<br>");
     echo("Zadanie 1");
     echo("<br>");
     echo($sql);
