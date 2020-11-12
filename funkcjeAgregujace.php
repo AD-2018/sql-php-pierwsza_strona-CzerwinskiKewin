@@ -168,7 +168,7 @@ echo("<br>");
 echo("<br>");
 echo("<h1>Group by</h1>");
     
-$sql = "SELECT avg(zarobki) FROM pracownicy,organizacja where id_org=dzial group by dzial";
+$sql = "SELECT avg(zarobki),nazwa_dzial FROM pracownicy,organizacja where id_org=dzial group by dzial";
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie group by 1");
@@ -178,7 +178,7 @@ $wynik = mysqli_query($conn, $sql);
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
         echo('<tr>');
-        echo('<td>'.$wiersz['count(imie)'].'</td>'.'<td>'.$wiersz['dzial'].'</td>');
+        echo('<td>'.$wiersz['count(imie)'].'</td>'.'<td>'.$wiersz['nazwa_dzial'].'</td>');
         echo('</tr>');
     }
 
