@@ -19,6 +19,8 @@ $sql = "SELECT sum(zarobki) FROM pracownicy,organizacja where id_org=dzial";
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie 1");
+    echo("<br>");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Suma zarobków</th>');
 
@@ -38,6 +40,8 @@ $sql = "SELECT sum(zarobki) FROM pracownicy,organizacja where id_org=dzial and i
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie 2");
+    echo("<br>");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Suma zarobków</th>');
 
@@ -57,6 +61,8 @@ $sql = "SELECT sum(zarobki) FROM pracownicy,organizacja where id_org=dzial and i
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie 3");
+    echo("<br>");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Suma zarobków</th>');
 
@@ -76,6 +82,8 @@ $sql = "SELECT avg(zarobki) FROM pracownicy,organizacja where id_org=dzial and i
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie 4");
+    echo("<br>");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Średnia zarobków</th>');
 
@@ -95,6 +103,8 @@ $sql = "SELECT avg(zarobki) FROM pracownicy,organizacja where id_org=dzial and d
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie 5");
+    echo("<br>");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Średnia zarobków</th>');
 
@@ -114,6 +124,8 @@ $sql = "SELECT avg(zarobki) FROM pracownicy,organizacja where id_org=dzial and i
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie 6");
+    echo("<br>");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Średnia zarobków</th>');
 
@@ -133,6 +145,8 @@ $sql = "SELECT count(imie) FROM pracownicy,organizacja where id_org=dzial";
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie 7");
+    echo("<br>");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Liczba pracowników</th>');
 
@@ -152,6 +166,8 @@ $sql = "SELECT count(imie) FROM pracownicy,organizacja where id_org=dzial and im
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie 8");
+    echo("<br>");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Liczba pracowników</th>');
 
@@ -172,6 +188,8 @@ $sql = "SELECT sum(zarobki),nazwa_dzial FROM pracownicy,organizacja where id_org
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie group by 1");
+    echo("<br>");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Suma zarobków</th><th>Dział</th>');
 
@@ -190,6 +208,8 @@ $sql = "SELECT count(imie),nazwa_dzial FROM pracownicy,organizacja where id_org=
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie group by 2");
+    echo("<br>");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Liczba pracowników</th><th>Dział</th>');
 
@@ -208,6 +228,8 @@ $sql = "SELECT avg(zarobki),nazwa_dzial FROM pracownicy,organizacja where id_org
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie group by 3");
+    echo("<br>");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Średnia zarobków</th><th>Dział</th>');
 
@@ -226,6 +248,8 @@ $sql = "SELECT sum(zarobki),nazwa_dzial,if((imie LIKE '%a'), 'Kobiety','Mężczy
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie group by 4");
+    echo("<br>");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Suma zarobków</th><th>Płeć</th>');
 
@@ -244,6 +268,8 @@ $sql = "SELECT avg(zarobki),nazwa_dzial,if((imie LIKE '%a'), 'Kobiety','Mężczy
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie group by 5");
+    echo("<br>");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Średnia zarobków</th><th>Płeć</th>');
 
@@ -264,6 +290,8 @@ $sql = "SELECT sum(zarobki),nazwa_dzial FROM pracownicy,organizacja where id_org
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie having 1");
+    echo("<br>");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Suma zarobków</th><th>Dział</th>');
 
@@ -282,6 +310,8 @@ $sql = "SELECT avg(zarobki),nazwa_dzial FROM pracownicy,organizacja where id_org
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie having 2");
+    echo("<br>");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Średnia zarobków</th><th>Dział</th>');
 
@@ -300,6 +330,8 @@ $sql = "SELECT count(imie),nazwa_dzial FROM pracownicy,organizacja where id_org=
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie having 3");
+    echo("<br>");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Liczba pracowników</th><th>Dział</th>');
 
