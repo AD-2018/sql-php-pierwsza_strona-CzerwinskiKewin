@@ -17,6 +17,7 @@ $sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia FROM pracownicy,organizac
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie 1");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Imie</th><th>nazwa_dzial</th><th>zarobki</th><th>data_urodzenia</th>');
 
@@ -36,6 +37,7 @@ $sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia FROM pracownicy,organizac
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie 2");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Imie</th><th>nazwa_dzial</th><th>zarobki</th><th>data_urodzenia</th>');
 
@@ -55,6 +57,7 @@ $sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia FROM pracownicy,organizac
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie 3");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Imie</th><th>nazwa_dzial</th><th>zarobki</th><th>data_urodzenia</th>');
 
@@ -74,6 +77,7 @@ $sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia FROM pracownicy,organizac
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie 4");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Imie</th><th>nazwa_dzial</th><th>zarobki</th><th>data_urodzenia</th>');
 
@@ -95,6 +99,7 @@ $sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia FROM pracownicy,organizac
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie sortowanie 1");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Imie</th><th>nazwa_dzial</th><th>zarobki</th><th>data_urodzenia</th>');
 
@@ -114,6 +119,7 @@ $sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia FROM pracownicy,organizac
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie sortowanie 2");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Imie</th><th>nazwa_dzial</th><th>zarobki</th><th>data_urodzenia</th>');
 
@@ -133,6 +139,7 @@ $sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia FROM pracownicy,organizac
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie sortowanie 3");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Imie</th><th>nazwa_dzial</th><th>zarobki</th><th>data_urodzenia</th>');
 
@@ -152,6 +159,7 @@ $sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia FROM pracownicy,organizac
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie sortowanie 4");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Imie</th><th>nazwa_dzial</th><th>zarobki</th><th>data_urodzenia</th>');
 
@@ -171,6 +179,7 @@ $sql = "SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie not lik
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie sortowanie 5");
+    echo($sql);
     echo('<table border="1">');
     echo('<th>Imie</th><th>nazwa_dzial</th><th>zarobki</th><th>data_urodzenia</th>');
 
