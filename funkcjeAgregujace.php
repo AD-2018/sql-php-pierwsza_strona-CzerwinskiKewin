@@ -163,27 +163,30 @@ $wynik = mysqli_query($conn, $sql);
     }
 
     echo('</table>');
-    
+      
 echo("<br>");
-
-
-$sql = "SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie not like '%a' order by nazwa_dzial asc, zarobki asc"; //zarobki asc
+echo("<br>");
+echo("<h1>Group by</h1>");
+    
+$sql = "SELECT avg(zarobki) FROM pracownicy,organizacja where id_org=dzial group by dzial";
 $wynik = mysqli_query($conn, $sql);
 
-    echo("Zadanie sortowanie 5");
+    echo("Zadanie group by 1");
     echo('<table border="1">');
-    echo('<th>Imie</th><th>nazwa_dzial</th><th>zarobki</th><th>data_urodzenia</th>');
+    echo('<th>Liczba pracowników</th><th>Dział</th>');
 
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
         echo('<tr>');
-        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['nazwa_dzial'].'</td>'.'<td>'.$wiersz['zarobki'].'</td>'.'<td>'.$wiersz['data_urodzenia'].'</td>');
+        echo('<td>'.$wiersz['count(imie)'].'</td>'.'<td>'.$wiersz['nazwa_dzial'].'</td>');
         echo('</tr>');
     }
 
     echo('</table>');
-    
+      
 echo("<br>");
+    
+
   
 ?>
   
