@@ -178,7 +178,7 @@ $wynik = mysqli_query($conn, $sql);
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
         echo('<tr>');
-        echo('<td>'.$wiersz['count(imie)'].'</td>'.'<td>'.$wiersz['nazwa_dzial'].'</td>');
+        echo('<td>'.$wiersz['count(imie)'].'</td>'.'<td>'.$wiersz['dzial'].'</td>');
         echo('</tr>');
     }
 
