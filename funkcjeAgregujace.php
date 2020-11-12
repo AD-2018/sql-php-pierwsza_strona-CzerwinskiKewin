@@ -37,7 +37,7 @@ echo("<br>");
 $sql = "SELECT sum(zarobki) FROM pracownicy,organizacja where id_org=dzial and imie like '%a'";
 $wynik = mysqli_query($conn, $sql);
 
-    echo("Zadanie 1");
+    echo("Zadanie 2");
     echo('<table border="1">');
     echo('<th>Suma zarobków</th>');
 
@@ -56,7 +56,7 @@ echo("<br>");
 $sql = "SELECT sum(zarobki) FROM pracownicy,organizacja where id_org=dzial and imie not like '%a' and (dzial=2 or dzial=3)";
 $wynik = mysqli_query($conn, $sql);
 
-    echo("Zadanie 1");
+    echo("Zadanie 3");
     echo('<table border="1">');
     echo('<th>Suma zarobków</th>');
 
@@ -75,7 +75,7 @@ echo("<br>");
 $sql = "SELECT avg(zarobki) FROM pracownicy,organizacja where id_org=dzial and imie not like '%a'";
 $wynik = mysqli_query($conn, $sql);
 
-    echo("Zadanie 1");
+    echo("Zadanie 4");
     echo('<table border="1">');
     echo('<th>Średnia zarobków</th>');
 
@@ -94,7 +94,7 @@ echo("<br>");
 $sql = "SELECT avg(zarobki) FROM pracownicy,organizacja where id_org=dzial and dzial=4";
 $wynik = mysqli_query($conn, $sql);
 
-    echo("Zadanie 1");
+    echo("Zadanie 5");
     echo('<table border="1">');
     echo('<th>Średnia zarobków</th>');
 
@@ -113,7 +113,7 @@ echo("<br>");
 $sql = "SELECT avg(zarobki) FROM pracownicy,organizacja where id_org=dzial and imie not like '%a' and (dzial=1 or dzial=2)";
 $wynik = mysqli_query($conn, $sql);
 
-    echo("Zadanie 1");
+    echo("Zadanie 6");
     echo('<table border="1">');
     echo('<th>Średnia zarobków</th>');
 
@@ -132,7 +132,7 @@ echo("<br>");
 $sql = "SELECT count(imie) FROM pracownicy,organizacja where id_org=dzial";
 $wynik = mysqli_query($conn, $sql);
 
-    echo("Zadanie 1");
+    echo("Zadanie 7");
     echo('<table border="1">');
     echo('<th>Liczba pracowników</th>');
 
@@ -151,7 +151,7 @@ echo("<br>");
 $sql = "SELECT count(imie) FROM pracownicy,organizacja where id_org=dzial and imie like '%a' and (dzial=1 or dzial=3)";
 $wynik = mysqli_query($conn, $sql);
 
-    echo("Zadanie 1");
+    echo("Zadanie 8");
     echo('<table border="1">');
     echo('<th>Liczba pracowników</th>');
 
