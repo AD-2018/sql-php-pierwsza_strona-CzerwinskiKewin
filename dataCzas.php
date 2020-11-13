@@ -12,6 +12,8 @@
 </div>
 
 <?php
+   
+require_once("connect.php");
     
 $sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia,year(curdate())-year(data_urodzenia) FROM pracownicy,organizacja where id_org=dzial";
 $wynik = mysqli_query($conn, $sql);
