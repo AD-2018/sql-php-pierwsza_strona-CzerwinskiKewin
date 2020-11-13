@@ -6,10 +6,12 @@
 <body>
     
 <div class="diw">
-    <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a>
-    <a href="index.php">Strona Główna</a>
-    <a href="funkcjeAgregujace.php">Funkcje Agregujące</a>
+    <a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a>
+    <a class="link" href="index.php">Strona Główna</a>
+    <a class="link" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
+    <a class="link" href="dataCzas.php">Data i Czas</a>
 </div>
+    
 <?php
 require_once("connect.php");
     
