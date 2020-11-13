@@ -295,27 +295,41 @@ $wynik = mysqli_query($conn, $sql);
     }
 
     echo('</table>');
+  
     
-    
-$sql2 = "SET lc_time_names = 'pl_PL'";   
-$sql = "SELECT date_format(curdate(),'%W') from pracownicy;";
-$wynik = mysqli_query($conn, $sql);
-$wynik = mysqli_query($conn, $sql2);
+echo("<h3> ZAD 2 </h3>");
+    $sql1 = "SET lc_time_names = 'pl_PL'";
+    $sql2 ="SELECT DATE_FORMAT(CURDATE(), '%W')";
+    $wynik = mysqli_query($conn, $sql1);
+    $wynik = mysqli_query($conn, $sql2);
+    echo ('<table border = "1" class = "moja_tabelka">');
+    echo ("<tr><th>data</th></tr>");
+        while ($wiersz = mysqli_fetch_assoc($wynik)) {
+                echo ('<tr>');
+                echo ('<td>'.$wiersz["DATE_FORMAT(CURDATE(), '%W')"].'</td>');
+                echo ('</tr>');
+        }echo ('</table>');
 
-    echo("Zadanie formatowanie 2");
-    echo("<br>");
-    echo($sql);
-    echo('<table border="1">');
-    echo('<th>Data</th>');
+//    
+// $sql2 = "SET lc_time_names = 'pl_PL'";   
+// $sql = "SELECT date_format(curdate(),'%W') from pracownicy;";
+// $wynik = mysqli_query($conn, $sql);
+// $wynik = mysqli_query($conn, $sql2);
 
-    while($wiersz=mysqli_fetch_assoc($wynik))
-    {
-        echo('<tr>');
-        echo('<td>'.$wiersz["date_format(curdate(),'%W')"].'</td>');
-        echo('</tr>');
-    }
+//     echo("Zadanie formatowanie 2");
+//     echo("<br>");
+//     echo($sql);
+//     echo('<table border="1">');
+//     echo('<th>Data</th>');
 
-    echo('</table>');
+//     while($wiersz=mysqli_fetch_assoc($wynik))
+//     {
+//         echo('<tr>');
+//         echo('<td>'.$wiersz["date_format(curdate(),'%W')"].'</td>');
+//         echo('</tr>');
+//     }
+
+//     echo('</table>');
     
 echo("<br>");
 
