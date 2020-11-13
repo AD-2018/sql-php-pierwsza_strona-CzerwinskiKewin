@@ -291,7 +291,7 @@ echo("<br>");
 echo("<br>");
 echo("<h1>Having</h1>");
     
-$sql = "SELECT sum(zarobki),nazwa_dzial FROM pracownicy,organizacja where id_org=dzial group by dzial having sum(zarobki)<28";
+$sql = "SELECT avg(zarobki),nazwa_dzial FROM pracownicy,organizacja where id_org=dzial group by dzial having avg(zarobki)<28";
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie having 1");
@@ -303,7 +303,7 @@ $wynik = mysqli_query($conn, $sql);
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
         echo('<tr>');
-        echo('<td>'.$wiersz['sum(zarobki)'].'</td>'.'<td>'.$wiersz['nazwa_dzial'].'</td>');
+        echo('<td>'.$wiersz['avg(zarobki)'].'</td>'.'<td>'.$wiersz['nazwa_dzial'].'</td>');
         echo('</tr>');
     }
 
