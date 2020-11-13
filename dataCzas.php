@@ -297,6 +297,47 @@ $wynik = mysqli_query($conn, $sql);
     echo('</table>');
     
 echo("<br>");
+    
+$sql = "SELECT *, date_format(data_urodzenia,'%W-%m-%Y') from pracownicy;";
+$wynik = mysqli_query($conn, $sql);
+
+    echo("Zadanie formatowanie 1");
+    echo("<br>");
+    echo($sql);
+    echo('<table border="1">');
+    echo('<th>Imię</th><th>Wiek</th>');
+
+    while($wiersz=mysqli_fetch_assoc($wynik))
+    {
+        echo('<tr>');
+        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz["date_format(data_urodzenia,'%W-%m-%Y')"].'</td>');
+        echo('</tr>');
+    }
+
+    echo('</table>');
+    
+echo("<br>");
+    
+SET lc_time_names = 'pl_PL';   
+$sql = "SELECT date_format(curdate(),'%W') from pracownicy;";
+$wynik = mysqli_query($conn, $sql);
+
+    echo("Zadanie formatowanie 2");
+    echo("<br>");
+    echo($sql);
+    echo('<table border="1">');
+    echo('<th>Imię</th><th>Wiek</th>');
+
+    while($wiersz=mysqli_fetch_assoc($wynik))
+    {
+        echo('<tr>');
+        echo('<td>'.$wiersz["date_format(curdate(),'%W')"].'</td>');
+        echo('</tr>');
+    }
+
+    echo('</table>');
+    
+echo("<br>");
 
 
 
