@@ -13,6 +13,8 @@
 </div>
     
 <?php
+echo("<h1>Kewin Czerwiński</h1>");
+    
 require_once("connect.php");
     
 $sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia FROM pracownicy,organizacja where id_org=dzial";
