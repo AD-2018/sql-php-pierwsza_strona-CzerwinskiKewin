@@ -306,7 +306,7 @@ $wynik = mysqli_query($conn, $sql2);
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
-    echo('<th>Imię</th><th>Wiek</th>');
+    echo('<th>Data</th>');
 
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
