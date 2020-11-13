@@ -15,7 +15,7 @@
 <?php
     
 echo("<h1>Kewin Czerwiński</h1>");
-    
+   
 require_once("connect.php");
 
 $sql = "SELECT * FROM pracownicy where dzial=2";
