@@ -318,9 +318,9 @@ $wynik = mysqli_query($conn, $sql);
     
 echo("<br>");
     
-SET lc_time_names = 'pl_PL';   
+$sql2 = "SET lc_time_names = 'pl_PL'";   
 $sql = "SELECT date_format(curdate(),'%W') from pracownicy;";
-$wynik = mysqli_query($conn, $sql);
+$wynik = mysqli_query($conn, $sql, $sql2);
 
     echo("Zadanie formatowanie 2");
     echo("<br>");
