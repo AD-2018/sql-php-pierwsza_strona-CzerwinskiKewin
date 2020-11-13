@@ -290,7 +290,7 @@ $wynik = mysqli_query($conn, $sql);
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
         echo('<tr>');
-        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['date_format(data_urodzenia,'%W-%m-%Y')'].'</td>');
+        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz["date_format(data_urodzenia,'%W-%m-%Y')"].'</td>');
         echo('</tr>');
     }
 
