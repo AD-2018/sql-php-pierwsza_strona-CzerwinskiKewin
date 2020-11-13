@@ -36,7 +36,7 @@ $wynik = mysqli_query($conn, $sql);
     
 echo("<br>");
     
-$sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia,year(curdate())-year(data_urodzenia) FROM pracownicy,organizacja where id_org=dzial and nazwa_dzial=serwis";
+$sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia,year(curdate())-year(data_urodzenia) FROM pracownicy,organizacja where id_org=dzial and nazwa_dzial='serwis'";
 $wynik = mysqli_query($conn, $sql);
     
     echo("Zadanie 2");
