@@ -236,7 +236,7 @@ $wynik = mysqli_query($conn, $sql);
     
 echo("<br>");
     
-$sql = "SELECT imie,datediff(curdate(),data_urodzenia),FROM pracownicy,organizacja where id_org=dzial";
+$sql = "SELECT imie,datediff(curdate(),data_urodzenia) FROM pracownicy,organizacja where id_org=dzial";
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie 1");
@@ -256,7 +256,7 @@ $wynik = mysqli_query($conn, $sql);
     
 echo("<br>");
     
-$sql = "SELECT imie,year(curdate())-year(data_urodzenia) FROM pracownicy,organizacja where id_org=dzial and imie not like '%a' order by data_urodzenia asc limit 1";
+$sql = "SELECT imie,year(curdate())-year(data_urodzenia)) FROM pracownicy,organizacja where id_org=dzial and imie not like '%a' order by data_urodzenia asc limit 1";
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie 1");
@@ -278,7 +278,6 @@ echo("<br>");
     
 
     
- 
     
 
 
