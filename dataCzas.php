@@ -236,14 +236,14 @@ $wynik = mysqli_query($conn, $sql);
     
 echo("<br>");
     
-$sql = "SELECT imie,datediff(year(curdate()year(data_urodzenia),FROM pracownicy,organizacja where id_org=dzial";
+$sql = "SELECT imie,datediff(curdate(),data_urodzenia),FROM pracownicy,organizacja where id_org=dzial";
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie 1");
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
-    echo('<th>Imię</th><th>Wiek</th><th>Dział</th>');
+    echo('<th>Imię</th><th>Wiek(dni)</th><th>Dział</th>');
 
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
@@ -263,7 +263,7 @@ $wynik = mysqli_query($conn, $sql);
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
-    echo('<th>Imię</th><th>Wiek(dni)</th><th>Dział</th>');
+    echo('<th>Imię</th><th>Wiek</th>');
 
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
