@@ -297,18 +297,23 @@ $wynik = mysqli_query($conn, $sql);
     echo('</table>');
   
     
-echo("<h3> ZAD 2 </h3>");
-    $sql1 = "SET lc_time_names = 'pl_PL'";
-    $sql2 ="SELECT DATE_FORMAT(CURDATE(), '%W')";
-    $wynik = mysqli_query($conn, $sql1);
-    $wynik = mysqli_query($conn, $sql2);
-    echo ('<table border = "1" class = "moja_tabelka">');
-    echo ("<tr><th>data</th></tr>");
-        while ($wiersz = mysqli_fetch_assoc($wynik)) {
+
+$sql1 = "SET lc_time_names = 'pl_PL'";
+$sql2 ="SELECT date_format(curdate(), '%W')";
+$wynik = mysqli_query($conn, $sql1);
+$wynik = mysqli_query($conn, $sql2);
+    
+    echo("<h1>Zadanie formatowanie 2</h1>");
+    echo ('<table border="1">');
+    echo ("<tr><th>Data</th></tr>");
+        while ($wiersz = mysqli_fetch_assoc($wynik)) 
+        {
                 echo ('<tr>');
-                echo ('<td>'.$wiersz["DATE_FORMAT(CURDATE(), '%W')"].'</td>');
+                echo ('<td>'.$wiersz["date_format(curdate(), '%W')"].'</td>');
                 echo ('</tr>');
-        }echo ('</table>');
+        }
+    
+    echo ('</table>');
 
 //    
 // $sql2 = "SET lc_time_names = 'pl_PL'";   
