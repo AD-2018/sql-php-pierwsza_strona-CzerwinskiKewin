@@ -278,7 +278,7 @@ echo("<br>");
 echo("<br>");
 echo("<h1>Formatowanie dat</h1>");
     
-$sql = "SELECT *, date_format(data_urodzenia,'%W-%m-%Y') from pracownicy;";
+$sql = "SELECT *, date_format(data_urodzenia,'%W-%m-%Y') from pracownicy";
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie formatowanie 1");
@@ -296,7 +296,7 @@ $wynik = mysqli_query($conn, $sql);
 
     echo('</table>');
   
-    
+echo("<br>");
 
 $sql1 = "SET lc_time_names = 'pl_PL'";
 $sql2 = "SELECT date_format(curdate(),'%W')";
@@ -319,6 +319,87 @@ $wynik = mysqli_query($conn, $sql2);
     echo ('</table>');
     
 echo("<br>");
+    
+$sql = "SELECT *,date_format(data_urodzenia,'%W-%M-%Y') from pracownicy;";
+$wynik = mysqli_query($conn, $sql);
+
+    echo("Zadanie formatowanie 3");
+    echo("<br>");
+    echo($sql);
+    echo('<table border="1">');
+    echo('<th>Imię</th><th>Data</th>');
+
+    while($wiersz=mysqli_fetch_assoc($wynik))
+    {
+        echo('<tr>');
+        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz["date_format(data_urodzenia,'%W-%M-%Y')"].'</td>');
+        echo('</tr>');
+    }
+
+    echo('</table>');
+  
+echo("<br>");
+    
+$sql = "SELECT curtime(4)";
+$wynik = mysqli_query($conn, $sql);
+
+    echo("Zadanie formatowanie 4");
+    echo("<br>");
+    echo($sql);
+    echo('<table border="1">');
+    echo('<th>Czas</th>');
+
+    while($wiersz=mysqli_fetch_assoc($wynik))
+    {
+        echo('<tr>');
+        echo('<td>'.$wiersz['curtime(4)'].'</td>');
+        echo('</tr>');
+    }
+
+    echo('</table>');
+  
+echo("<br>");
+    
+$sql = "SELECT *,date_format(data_urodzenia,'%Y-%M-%W') from pracownicy";
+$wynik = mysqli_query($conn, $sql);
+
+    echo("Zadanie formatowanie 5");
+    echo("<br>");
+    echo($sql);
+    echo('<table border="1">');
+    echo('<th>Imię</th><th>Data</th>');
+
+    while($wiersz=mysqli_fetch_assoc($wynik))
+    {
+        echo('<tr>');
+        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz["date_format(data_urodzenia,'%Y-%M-%W')"].'</td>');
+        echo('</tr>');
+    }
+
+    echo('</table>');
+  
+echo("<br>");
+    
+$sql = "SELECT datediff(curdate(),data_urodzenia)*24 as godziny, datediff(curdate(),data_urodzenia)*24*60 as min FROM pracownicy, organizacja where id_org=dzial";
+$wynik = mysqli_query($conn, $sql);
+
+    echo("Zadanie formatowanie 6");
+    echo("<br>");
+    echo($sql);
+    echo('<table border="1">');
+    echo('<th>Imię</th><th>Data</th>');
+
+    while($wiersz=mysqli_fetch_assoc($wynik))
+    {
+        echo('<tr>');
+        echo('<td>'.$wiersz["min"].'</td>');
+        echo('</tr>');
+    }
+
+    echo('</table>');
+  
+echo("<br>");
+    
 
 
 
