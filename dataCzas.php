@@ -285,12 +285,12 @@ $wynik = mysqli_query($conn, $sql);
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
-    echo('<th>Imię</th><th>Wiek</th><th>Dział</th>');
+    echo('<th>Imię</th><th>Wiek</th>');
 
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
         echo('<tr>');
-        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['date_format(data_urodzenia,'%W-%m-%Y''].'</td>');
+        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['date_format(data_urodzenia,'%W-%m-%Y')'].'</td>');
         echo('</tr>');
     }
 
