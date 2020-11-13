@@ -47,12 +47,12 @@ $wynik = mysqli_query($conn, $sql);
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
-    echo('<th>Imie</th><th>nazwa_dzial</th><th>zarobki</th><th>Wiek</th>');
+    echo('<th>Imię</th><th>Nazwa działu</th><th>Wiek</th>');
 
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
         echo('<tr>');
-        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['nazwa_dzial'].'</td>'.'<td>'.$wiersz['zarobki'].'</td>'.'<td>'.$wiersz['year(curdate())-year(data_urodzenia)'].'</td>');
+        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['nazwa_dzial'].'</td>'.'<td>'.$wiersz['year(curdate())-year(data_urodzenia)'].'</td>');
         echo('</tr>');
     }
 
