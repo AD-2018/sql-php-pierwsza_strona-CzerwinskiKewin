@@ -1,22 +1,13 @@
-table {
+table, td {
+  background-color: goldenrod;
   border-collapse: collapse;
+  text-align: center
 }
 
 body {
-  background-color: magenta;
+  background-color: darkmagenta;
 }
 
-th {
-  background-color: cyan;
-  color: black;
-  height: 50px;
-}
-td {
-  padding: 10px;
-}
-tr:nth-child(even) {
- background-color: yellow;
-}
-tr:nth-child(odd) {
- background-color: green;
+h1 {
+  color: lawngreen;
 }
