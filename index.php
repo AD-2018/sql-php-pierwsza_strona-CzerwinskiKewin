@@ -25,7 +25,7 @@ $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie 1");
     echo('<table border="1">');
-    echo('<th>Imie</th><th>dzial</th><th>zarobki</th><th>data_urodzenia</th>');
+    echo('<th>Imię</th><th>Dział</th><th>Zarobki</th><th>Data urodzenia</th>');
 
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
@@ -45,7 +45,7 @@ $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie 2");
     echo('<table border="1">');
-    echo('<th>Imie</th><th>dzial</th><th>zarobki</th><th>data_urodzenia</th>');
+    echo('<th>Imię</th><th>Dział</th><th>Zarobki</th><th>Data urodzenia</th>');
 
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
@@ -65,7 +65,7 @@ $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie 3");
     echo('<table border="1">');
-    echo('<th>Imie</th><th>dzial</th><th>zarobki</th><th>data_urodzenia</th>');
+    echo('<th>Imię</th><th>Dział</th><th>Zarobki</th><th>Data urodzenia</th>');
 
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
