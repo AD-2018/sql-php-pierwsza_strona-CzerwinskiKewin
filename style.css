@@ -4,10 +4,28 @@ table, td {
   text-align: center
 }
 
+th{
+  text-align:center;
+  background-color: sandybrown;
+}
+
 body {
-  background-color: darkmagenta;
+  background-color: darkorchid;
 }
 
 h1 {
   color: lawngreen;
 }
+
+.link{
+  color:deepskyblue;
+  padding:20px;
+  margin-left:20px;
+  margin-top:10px;
+}
+
+.link:hover{
+  background-color: chartreuse;
+  backgrond-color: deeppink;
+}
+
