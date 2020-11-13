@@ -473,7 +473,7 @@ $wynik = mysqli_query($conn, $sql);
   
 echo("<br>");
     
-$sql = "SELECT date_format(data_urodzenia,'%W') as dzien, count(date_format(data_urodzenia,'%W')) as ilosc FROM pracownicy,organizacja where id_org=dzial order by 
+$sql = "SELECT date_format(data_urodzenia,'%W') as dzien, count(date_format(data_urodzenia,'%W')) as ilosc FROM pracownicy,organizacja where id_org=dzial group by dzien order by 
      CASE
           
           WHEN dzien = 'Poniedziałek' THEN 1
