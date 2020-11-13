@@ -148,7 +148,7 @@ $wynik = mysqli_query($conn, $sql);
 echo("<br>");
 
 
-$sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia FROM pracownicy,organizacja where id_org=dzial and imie like '%a' order by zarobki asc";
+$sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia FROM pracownicy,organizacja where id_org=dzial and imie like '%a' order by imie asc";
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie sortowanie 3");
