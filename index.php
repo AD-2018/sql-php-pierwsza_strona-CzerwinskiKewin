@@ -24,6 +24,7 @@ $sql = "SELECT * FROM pracownicy where dzial=2";
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie 1");
+    echo ("<br>");
     echo($sql);
     echo('<table border="1">');
     echo('<th>Imię</th><th>Dział</th><th>Zarobki</th><th>Data urodzenia</th>');
@@ -45,6 +46,7 @@ $sql = "SELECT * FROM pracownicy where (dzial=2 or dzial=3)";
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie 2");
+    echo ("<br>");
     echo($sql);
     echo('<table border="1">');
     echo('<th>Imię</th><th>Dział</th><th>Zarobki</th><th>Data urodzenia</th>');
@@ -66,6 +68,7 @@ $sql = "SELECT * FROM pracownicy where zarobki<30";
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie 3");
+    echo ("<br>");
     echo($sql);
     echo('<table border="1">');
     echo('<th>Imię</th><th>Dział</th><th>Zarobki</th><th>Data urodzenia</th>');
