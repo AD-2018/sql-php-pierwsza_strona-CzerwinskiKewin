@@ -148,7 +148,7 @@ $wynik = mysqli_query($conn, $sql);
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
         echo('<tr>');
-        echo('<td>'.$wiersz['avg(year(curdate())-year(data_urodzenia))'].'</td>'.'<td>'.$wiersz['dzial'].'</td>');
+        echo('<td>'.$wiersz['avg(year(curdate())-year(data_urodzenia))'].'</td>'.'<td>'.$wiersz['nazwa_dzial'].'</td>');
         echo('</tr>');
     }
 
@@ -168,7 +168,7 @@ $wynik = mysqli_query($conn, $sql);
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
         echo('<tr>');
-        echo('<td>'.$wiersz['sum(year(curdate())-year(data_urodzenia))'].'</td>'.'<td>'.$wiersz['dzial'].'</td>');
+        echo('<td>'.$wiersz['sum(year(curdate())-year(data_urodzenia))'].'</td>'.'<td>'.$wiersz['nazwa_dzial'].'</td>');
         echo('</tr>');
     }
 
@@ -176,6 +176,67 @@ $wynik = mysqli_query($conn, $sql);
     
 echo("<br>");
     
+$sql = "SELECT max(year(curdate())-year(data_urodzenia)),nazwa_dzial FROM pracownicy,organizacja where id_org=dzial group by dzial";
+$wynik = mysqli_query($conn, $sql);
+
+    echo("Zadanie 1");
+    echo("<br>");
+    echo($sql);
+    echo('<table border="1">');
+    echo('<th>Najstarszy</th><th>Dział</th>');
+
+    while($wiersz=mysqli_fetch_assoc($wynik))
+    {
+        echo('<tr>');
+        echo('<td>'.$wiersz['max(year(curdate())-year(data_urodzenia))'].'</td>'.'<td>'.$wiersz['nazwa_dzial'].'</td>');
+        echo('</tr>');
+    }
+
+    echo('</table>');
+    
+echo("<br>");
+    
+$sql = "SELECT min(year(curdate())-year(data_urodzenia)),nazwa_dzial FROM pracownicy,organizacja where id_org=dzial and (nazwa_dzial=handel or nazwa_dzial=serwis) group by dzial";
+$wynik = mysqli_query($conn, $sql);
+
+    echo("Zadanie 1");
+    echo("<br>");
+    echo($sql);
+    echo('<table border="1">');
+    echo('<th>Najmłodszy</th><th>Dział</th>');
+
+    while($wiersz=mysqli_fetch_assoc($wynik))
+    {
+        echo('<tr>');
+        echo('<td>'.$wiersz['min(year(curdate())-year(data_urodzenia))'].'</td>'.'<td>'.$wiersz['nazwa_dzial'].'</td>');
+        echo('</tr>');
+    }
+
+    echo('</table>');
+    
+echo("<br>");
+    
+$sql = "SELECT min(year(curdate())-year(data_urodzenia)),nazwa_dzial FROM pracownicy,organizacja where id_org=dzial and (nazwa_dzial=handel or nazwa_dzial=serwis) group by dzial";
+$wynik = mysqli_query($conn, $sql);
+
+    echo("Zadanie 1");
+    echo("<br>");
+    echo($sql);
+    echo('<table border="1">');
+    echo('<th>Imię</th><th>Wiek</th><th>Dział</th>');
+
+    while($wiersz=mysqli_fetch_assoc($wynik))
+    {
+        echo('<tr>');
+        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['min(year(curdate())-year(data_urodzenia))'].'</td>'.'<td>'.$wiersz['nazwa_dzial'].'</td>');
+        echo('</tr>');
+    }
+
+    echo('</table>');
+    
+echo("<br>");
+    
+
 
 
 
