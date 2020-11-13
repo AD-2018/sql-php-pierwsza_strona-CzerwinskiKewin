@@ -22,7 +22,7 @@ h1 {
 }
 
 .link{
-  background-color: chocolate;
+  background-color: sienna;
   color:deepskyblue;
   padding:10px;
   margin-left:20px;
@@ -34,5 +34,9 @@ h1 {
 
 .diw{
   margin-top:30px;
+}
+
+hr{
+  color: deeppink;
 }
 
