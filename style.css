@@ -1,7 +1,13 @@
-table {
+table, td {
+  background-color: goldenrod;
   border-collapse: collapse;
+  text-align: center
 }
 
 body {
   background-color: darkmagenta;
+}
+
+h1 {
+  color: lawngreen;
 }
