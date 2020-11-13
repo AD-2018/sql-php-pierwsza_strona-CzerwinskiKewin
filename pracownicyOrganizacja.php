@@ -203,6 +203,63 @@ $wynik = mysqli_query($conn, $sql);
     echo('</table>');
     
 echo("<br>");
+echo("<br>");
+echo("<h1>Limit</h1>");
+    
+$sql = "SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and dzial=4 order by zarobki desc limit 2";
+$wynik = mysqli_query($conn, $sql);
+
+    echo("Zadanie limit 1");
+    echo("<br>");
+    echo($sql);
+    echo('<table border="1">');
+    echo('<th>Imie</th><th>nazwa_dzial</th><th>zarobki</th><th>data_urodzenia</th>');
+
+    while($wiersz=mysqli_fetch_assoc($wynik))
+    {
+        echo('<tr>');
+        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['nazwa_dzial'].'</td>'.'<td>'.$wiersz['zarobki'].'</td>'.'<td>'.$wiersz['data_urodzenia'].'</td>');
+        echo('</tr>');
+    }
+
+    echo('</table>');
+    
+$sql = "SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and (dzial=2 or dzial=4) and imie like '%a' order by zarobki desc limit 3"; //zarobki asc
+$wynik = mysqli_query($conn, $sql);
+
+    echo("Zadanie limit 2");
+    echo("<br>");
+    echo($sql);
+    echo('<table border="1">');
+    echo('<th>Imie</th><th>nazwa_dzial</th><th>zarobki</th><th>data_urodzenia</th>');
+
+    while($wiersz=mysqli_fetch_assoc($wynik))
+    {
+        echo('<tr>');
+        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['nazwa_dzial'].'</td>'.'<td>'.$wiersz['zarobki'].'</td>'.'<td>'.$wiersz['data_urodzenia'].'</td>');
+        echo('</tr>');
+    }
+
+    echo('</table>');
+    
+$sql = "SELECT * FROM pracownicy,organizacja WHERE id_org=dzial order by data_urodzenia asc limit 1";
+$wynik = mysqli_query($conn, $sql);
+
+    echo("Zadanie limit 3");
+    echo("<br>");
+    echo($sql);
+    echo('<table border="1">');
+    echo('<th>Imie</th><th>nazwa_dzial</th><th>zarobki</th><th>data_urodzenia</th>');
+
+    while($wiersz=mysqli_fetch_assoc($wynik))
+    {
+        echo('<tr>');
+        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['nazwa_dzial'].'</td>'.'<td>'.$wiersz['zarobki'].'</td>'.'<td>'.$wiersz['data_urodzenia'].'</td>');
+        echo('</tr>');
+    }
+
+    echo('</table>');
+    
 
 ?>
 
