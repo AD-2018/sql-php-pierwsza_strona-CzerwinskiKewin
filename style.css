@@ -2,7 +2,7 @@ table, td {
   background-color: goldenrod;
   border-collapse: collapse;
   text-align: center;
-  padding:15px;
+  padding:5px;
 }
 
 th{
@@ -27,6 +27,6 @@ h1 {
 }
 
 .link:hover{
-  backgrond-color: deeppink;
+  background-color: deeppink;
 }
 
