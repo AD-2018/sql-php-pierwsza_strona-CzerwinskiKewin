@@ -15,6 +15,8 @@
 <?php
     
 echo("<h1>Kewin Czerwiński</h1>");
+echo("<hr>");
+echo("<h1>Pracownicy</h1>");
    
 require_once("connect.php");
 
