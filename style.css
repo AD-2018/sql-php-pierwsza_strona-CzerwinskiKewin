@@ -3,11 +3,13 @@ table, td {
   border-collapse: collapse;
   text-align: center;
   padding:5px;
+  color: deepskyblue;
 }
 
 th{
   text-align:center;
   background-color: chocolate;
+  color: deepskyblue;
 }
 
 body {
@@ -24,7 +26,7 @@ h1 {
   color:deepskyblue;
   padding:10px;
   margin-left:20px;
-  margin-top:15px;
+  margin-top:50px;
 }
 
 .link:hover{
