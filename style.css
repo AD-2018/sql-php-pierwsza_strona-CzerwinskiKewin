@@ -26,10 +26,13 @@ h1 {
   color:deepskyblue;
   padding:10px;
   margin-left:20px;
-  margin-top:50px;
 }
 
 .link:hover{
   background-color: deeppink;
+}
+
+.diw{
+  margin-top:30px;
 }
 
