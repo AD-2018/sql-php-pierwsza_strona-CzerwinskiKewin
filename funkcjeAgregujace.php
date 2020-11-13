@@ -14,7 +14,7 @@
 
 <?php
 echo("<h1>Kewin Czerwiński</h1>");
-echo("<br>");
+echo("<hr>");
 echo("<h1>Funkcje Agregujące</h1>");
     
 require_once("connect.php");
