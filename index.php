@@ -9,6 +9,7 @@
     <a href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a>
     <a href="pracownicyOrganizacja.php">Pracownicy i Organizacja</a>
     <a href="funkcjeAgregujace.php">Funkcje Agregujące</a>
+    <a href="dataCzas.php">Data i Czas</a>
 </div>
     
 <?php
