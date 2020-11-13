@@ -305,14 +305,14 @@ $wynik = mysqli_query($conn, $sql2);
     
     echo("Zadanie formatowanie 2");
     echo("<br>");
-    echo($sql1);
-    echo ('<table border="1">');
-    echo ("<tr><th>Data</th></tr>");
+    echo($sql2);
+    echo('<table border="1">');
+    echo("<tr><th>Data</th></tr>");
     
      while($wiersz=mysqli_fetch_assoc($wynik)) 
      {
           echo ('<tr>');
-          echo ('<td>'.$wiersz["date_format(curdate(), '%W')"].'</td>');
+          echo ('<td>'.$wiersz["date_format(curdate(),'%W')"].'</td>');
           echo ('</tr>');
      }
     
