@@ -275,10 +275,33 @@ $wynik = mysqli_query($conn, $sql);
     echo('</table>');
     
 echo("<br>");
+echo("<br>");
+echo("<h1>Formatowanie dat</h1>");
     
+$sql = "SELECT *, date_format(data_urodzenia,'%W-%m-%Y') from pracownicy;";
+$wynik = mysqli_query($conn, $sql);
+
+    echo("Zadanie formatowanie 1");
+    echo("<br>");
+    echo($sql);
+    echo('<table border="1">');
+    echo('<th>Imię</th><th>Wiek</th><th>Dział</th>');
+
+    while($wiersz=mysqli_fetch_assoc($wynik))
+    {
+        echo('<tr>');
+        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['date_format(data_urodzenia,'%W-%m-%Y''].'</td>');
+        echo('</tr>');
+    }
+
+    echo('</table>');
+    
+echo("<br>");
+
+
 
     
-    
+
 
 
 
