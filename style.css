@@ -12,10 +12,11 @@ th{
 
 body {
   background-color: darkorchid;
+  color: gold;
 }
 
 h1 {
-  color: lawngreen;
+  color: darkgoldenrod;
 }
 
 .link{
