@@ -76,7 +76,7 @@ $wynik = mysqli_query($conn, $sql);
     
 echo("<br>");
     
-$sql = "SELECT sum(year(curdate())-year(data_urodzenia)) FROM pracownicy,organizacja where id_org=dzial and nazwa_dzial=handel";
+$sql = "SELECT sum(year(curdate())-year(data_urodzenia)) FROM pracownicy,organizacja where id_org=dzial and nazwa_dzial='handel'";
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie 4");
@@ -380,7 +380,7 @@ $wynik = mysqli_query($conn, $sql);
   
 echo("<br>");
     
-$sql = "SELECT datediff(curdate(),data_urodzenia)*24 as godz, datediff(curdate(),data_urodzenia)*24*60 as min FROM pracownicy, organizacja where id_org=dzial";
+$sql = "SELECT imie,datediff(curdate(),data_urodzenia)*24 as godz, datediff(curdate(),data_urodzenia)*24*60 as min FROM pracownicy, organizacja where id_org=dzial";
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie formatowanie 6");
@@ -420,20 +420,18 @@ $wynik = mysqli_query($conn, $sql);
   
 echo("<br>");
     
-$sql = "SELECT imie, DATE_FORMAT(data_urodzenia,'%W')
-FROM
-     pracownicy
-ORDER BY 
+$sql = "SELECT imie, DATE_FORMAT(data_urodzenia,'%W') FROM pracownicy,organizacja where id_org=dzial order by 
      CASE
           
-          WHEN dzien = 'Monday' THEN 1
-          WHEN dzien = 'Tuesday' THEN 2
-          WHEN dzien = 'Wednesday' THEN 3
-          WHEN dzien= 'Thursday' THEN 4
-          WHEN dzien = 'Friday' THEN 5
-          WHEN dzien = 'Saturday' THEN 6
-          WHEN dzien = 'Sunday' THEN 7
+          WHEN dzien = 'Poniedziałek' THEN 1
+          WHEN dzien = 'Wtorek' THEN 2
+          WHEN dzien = 'Środa' THEN 3
+          WHEN dzien= 'Czwartek' THEN 4
+          WHEN dzien = 'Piątek' THEN 5
+          WHEN dzien = 'Sobota' THEN 6
+          WHEN dzien = 'Niedziela' THEN 7
      END ASC";
+    
 $wynik = mysqli_query($conn, $sql);
 
     echo("Zadanie formatowanie 5");
