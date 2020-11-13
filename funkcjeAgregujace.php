@@ -13,7 +13,8 @@
 </div>
 
 <?php
-  
+echo("<h1>Kewin Czerwiński</h1>");
+    
 require_once("connect.php");
     
 $sql = "SELECT sum(zarobki) FROM pracownicy,organizacja where id_org=dzial";
