@@ -1,7 +1,8 @@
 table, td {
   background-color: goldenrod;
   border-collapse: collapse;
-  text-align: center
+  text-align: center;
+  padding:15px;
 }
 
 th{
@@ -18,14 +19,14 @@ h1 {
 }
 
 .link{
+  background-color: chartreuse;
   color:deepskyblue;
-  padding:20px;
+  padding:15px;
   margin-left:20px;
   margin-top:10px;
 }
 
 .link:hover{
-  background-color: chartreuse;
   backgrond-color: deeppink;
 }
 
