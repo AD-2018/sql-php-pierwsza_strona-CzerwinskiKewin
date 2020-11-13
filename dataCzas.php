@@ -434,11 +434,11 @@ $sql = "SELECT imie, DATE_FORMAT(data_urodzenia,'%W') as dzien FROM pracownicy,o
     
 $wynik = mysqli_query($conn, $sql);
 
-    echo("Zadanie formatowanie 5");
+    echo("Zadanie formatowanie 8");
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
-    echo('<th>Imię</th><th>Data</th>');
+    echo('<th>Imię</th><th>Dzień</th>');
 
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
@@ -448,9 +448,63 @@ $wynik = mysqli_query($conn, $sql);
     }
 
     echo('</table>');
+    
+echo("<br>");
+    
+$sql = "SELECT count(date_format(data_urodzenia, '%W')) from pracownicy,organizacja where id_org=dzial and (date_format(data_urodzenia,'%W')='Poniedziałek')";
+$wynik = mysqli_query($conn, $sql);
+
+    echo("Zadanie formatowanie 9");
+    echo("<br>");
+    echo($sql);
+    echo('<table border="1">');
+    echo('<th>Urodzeni w poniedziałek</th>');
+
+    while($wiersz=mysqli_fetch_assoc($wynik))
+    {
+        echo('<tr>');
+        echo('<td>'.$wiersz["count(date_format(data_urodzenia, '%W'))"].'</td>');
+        echo('</tr>');
+    }
+
+    echo('</table>');
+    
+
   
 echo("<br>");
     
+$sql = "SELECT date_format(data_urodzenia,'%W') as dzien, count(date_format(data_urodzenia,'%W')) as ilosc FROM pracownicy,organizacja where id_org=dzial order by 
+     CASE
+          
+          WHEN dzien = 'Poniedziałek' THEN 1
+          WHEN dzien = 'Wtorek' THEN 2
+          WHEN dzien = 'Środa' THEN 3
+          WHEN dzien = 'Czwartek' THEN 4
+          WHEN dzien = 'Piątek' THEN 5
+          WHEN dzien = 'Sobota' THEN 6
+          WHEN dzien = 'Niedziela' THEN 7
+     END ASC";
+    
+$wynik = mysqli_query($conn, $sql);
+
+    echo("Zadanie formatowanie 10");
+    echo("<br>");
+    echo($sql);
+    echo('<table border="1">');
+    echo('<th>Dzień</th><th>Liczba dni</th>');
+
+    while($wiersz=mysqli_fetch_assoc($wynik))
+    {
+        echo('<tr>');
+        echo('<td>'.$wiersz['dzien'].'</td>'.'<td>'.$wiersz['ilosc'].'</td>');
+        echo('</tr>');
+    }
+
+    echo('</table>');
+    
+echo("<br>");
+    
+
 
 
 
