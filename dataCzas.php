@@ -403,7 +403,7 @@ echo("<br>");
 $sql = "SELECT date_format('2002-10-01','%j')";
 $wynik = mysqli_query($conn, $sql);
 
-    echo("Zadanie formatowanie 5");
+    echo("Zadanie formatowanie 7");
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
@@ -420,13 +420,13 @@ $wynik = mysqli_query($conn, $sql);
   
 echo("<br>");
     
-$sql = "SELECT imie, DATE_FORMAT(data_urodzenia,'%W') FROM pracownicy,organizacja where id_org=dzial order by 
+$sql = "SELECT imie, DATE_FORMAT(data_urodzenia,'%W') as dzien FROM pracownicy,organizacja where id_org=dzial order by 
      CASE
           
           WHEN dzien = 'Poniedziałek' THEN 1
           WHEN dzien = 'Wtorek' THEN 2
           WHEN dzien = 'Środa' THEN 3
-          WHEN dzien= 'Czwartek' THEN 4
+          WHEN dzien = 'Czwartek' THEN 4
           WHEN dzien = 'Piątek' THEN 5
           WHEN dzien = 'Sobota' THEN 6
           WHEN dzien = 'Niedziela' THEN 7
@@ -443,7 +443,7 @@ $wynik = mysqli_query($conn, $sql);
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
         echo('<tr>');
-        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz["DATE_FORMAT(data_urodzenia,'%W')"].'</td>');
+        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz["dzien"].'</td>');
         echo('</tr>');
     }
 
