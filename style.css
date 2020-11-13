@@ -3,22 +3,22 @@ table, td {
   border-collapse: collapse;
   text-align: center;
   padding:5px;
-  color: deepskyblue;
+  color: black;
 }
 
 th{
   text-align:center;
   background-color: chocolate;
-  color: deepskyblue;
+  color: black;
 }
 
 body {
   background-color: darkorchid;
-  color: gold;
+  color: garkgoldenrod;
 }
 
 h1 {
-  color: darkgoldenrod;
+  color: limegreen;
 }
 
 .link{
