@@ -39,7 +39,7 @@ echo("<br>");
 $sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia,year(curdate())-year(data_urodzenia) FROM pracownicy,organizacja where id_org=dzial and nazwa_dzial=serwis";
 $wynik = mysqli_query($conn, $sql);
     
-    echo("Zadanie 1");
+    echo("Zadanie 2");
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
@@ -59,7 +59,7 @@ echo("<br>");
 $sql = "SELECT sum(year(curdate())-year(data_urodzenia)) FROM pracownicy,organizacja where id_org=dzial";
 $wynik = mysqli_query($conn, $sql);
     
-    echo("Zadanie 1");
+    echo("Zadanie 3");
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
@@ -79,7 +79,7 @@ echo("<br>");
 $sql = "SELECT sum(year(curdate())-year(data_urodzenia)) FROM pracownicy,organizacja where id_org=dzial and nazwa_dzial=handel";
 $wynik = mysqli_query($conn, $sql);
 
-    echo("Zadanie 1");
+    echo("Zadanie 4");
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
@@ -99,7 +99,7 @@ echo("<br>");
 $sql = "SELECT sum(year(curdate())-year(data_urodzenia)) FROM pracownicy,organizacja where id_org=dzial and imie like '%a'";
 $wynik = mysqli_query($conn, $sql);
 
-    echo("Zadanie 1");
+    echo("Zadanie 5");
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
@@ -119,7 +119,7 @@ echo("<br>");
 $sql = "SELECT sum(year(curdate())-year(data_urodzenia)) FROM pracownicy,organizacja where id_org=dzial and imie not like '%a'";
 $wynik = mysqli_query($conn, $sql);
     
-    echo("Zadanie 1");
+    echo("Zadanie 6");
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
@@ -139,7 +139,7 @@ echo("<br>");
 $sql = "SELECT avg(year(curdate())-year(data_urodzenia)),nazwa_dzial FROM pracownicy,organizacja where id_org=dzial group by dzial";
 $wynik = mysqli_query($conn, $sql);
 
-    echo("Zadanie 1");
+    echo("Zadanie 7");
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
@@ -159,7 +159,7 @@ echo("<br>");
 $sql = "SELECT sum(year(curdate())-year(data_urodzenia)),nazwa_dzial FROM pracownicy,organizacja where id_org=dzial group by dzial";
 $wynik = mysqli_query($conn, $sql);
 
-    echo("Zadanie 1");
+    echo("Zadanie 8");
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
@@ -179,7 +179,7 @@ echo("<br>");
 $sql = "SELECT max(year(curdate())-year(data_urodzenia)),nazwa_dzial FROM pracownicy,organizacja where id_org=dzial group by dzial";
 $wynik = mysqli_query($conn, $sql);
 
-    echo("Zadanie 1");
+    echo("Zadanie 9");
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
@@ -199,7 +199,7 @@ echo("<br>");
 $sql = "SELECT min(year(curdate())-year(data_urodzenia)),nazwa_dzial FROM pracownicy,organizacja where id_org=dzial and (nazwa_dzial='handel' or nazwa_dzial='serwis') group by dzial";
 $wynik = mysqli_query($conn, $sql);
 
-    echo("Zadanie 1");
+    echo("Zadanie 10");
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
@@ -219,7 +219,7 @@ echo("<br>");
 $sql = "SELECT imie,min(year(curdate())-year(data_urodzenia)),nazwa_dzial FROM pracownicy,organizacja where id_org=dzial and (nazwa_dzial='handel' or nazwa_dzial='serwis') group by dzial";
 $wynik = mysqli_query($conn, $sql);
 
-    echo("Zadanie 1");
+    echo("Zadanie 11");
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
@@ -239,16 +239,16 @@ echo("<br>");
 $sql = "SELECT imie,datediff(curdate(),data_urodzenia) FROM pracownicy,organizacja where id_org=dzial";
 $wynik = mysqli_query($conn, $sql);
 
-    echo("Zadanie 1");
+    echo("Zadanie 13");
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
-    echo('<th>Imię</th><th>Wiek(dni)</th><th>Dział</th>');
+    echo('<th>Imię</th><th>Wiek(dni)</th>');
 
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
         echo('<tr>');
-        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['datediff(year(curdate()year(data_urodzenia)'].'</td>');
+        echo('<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['datediff(curdate(),data_urodzenia)'].'</td>');
         echo('</tr>');
     }
 
