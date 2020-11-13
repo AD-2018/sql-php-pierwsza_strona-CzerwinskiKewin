@@ -143,7 +143,7 @@ $wynik = mysqli_query($conn, $sql);
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
-    echo('<th>Średnia lat</th>');
+    echo('<th>Średnia lat</th><th>Dział</th>');
 
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
@@ -163,7 +163,7 @@ $wynik = mysqli_query($conn, $sql);
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
-    echo('<th>Suma lat</th>');
+    echo('<th>Suma lat</th><th>Dział</th>');
 
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
