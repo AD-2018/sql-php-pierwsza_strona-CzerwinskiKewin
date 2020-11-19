@@ -10,6 +10,7 @@
     <a class="link" href="pracownicyOrganizacja.php">Pracownicy i Organizacja</a>
     <a class="link" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
     <a class="link" href="dataCzas.php">Data i Czas</a>
+    <a class="link" href="formularz.html">Formularz</a>
 </div>
     
 <?php
