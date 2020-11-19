@@ -1,20 +1,19 @@
 <?php
-$servername = "localhost";
-$username = "username";
-$password = "password";
-$dbname = "myDB";
+$servername = "mysql-kcz.alwaysdata.net";
+$username = "kcz";
+$password = "zaq1@WSX";
+$dbname = "kcz_20";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "INSERT INTO Pracownik (null, imie, dzial, zarobki) 
+$sql = "INSERT INTO pracownicy (null, imie, dzial, zarobki) 
        VALUES (null,'Ksawery', 3, 36,'1995-10-21')";
 
 $conn->query($sql);
 
 $conn->close();
-
 ?>
 
