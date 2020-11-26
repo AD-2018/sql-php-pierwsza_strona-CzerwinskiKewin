@@ -4,7 +4,6 @@ $username = "kcz";
 $password = "zaq1@WSX";
 $dbname = "kcz_20";
 
-<?php
 echo("jestes w insert.php");
 echo "<li>".$_POST['imie'];
 echo "<li>".$_POST['dzial'];
