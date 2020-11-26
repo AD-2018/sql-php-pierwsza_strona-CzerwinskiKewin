@@ -24,5 +24,27 @@
    <input type="submit" value="Usuń pracownika">
 </form>
 
+<?php
+require_once("connect.php");
+
+$sql = "SELECT * FROM pracownicy";
+$wynik = mysqli_query($conn, $sql);
+
+    echo ("<br>");
+    echo($sql);
+    echo('<table border="1">');
+    echo('<th>ID</th><th>Imię</th><th>Dział</th><th>Zarobki</th><th>Data urodzenia</th>');
+
+    while($wiersz=mysqli_fetch_assoc($wynik))
+    {
+        echo('<tr>');
+        echo('<td>'.$wiersz['id_pracownicy'].'</td>'.'<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['dzial'].'</td>'.'<td>'.$wiersz['zarobki'].'</td>'.'<td>'.$wiersz['data_urodzenia'].'</td>');
+        echo('</tr>');
+    }
+
+    echo('</table>');
+    
+echo("<br>");
+
 </body>
 </html>
