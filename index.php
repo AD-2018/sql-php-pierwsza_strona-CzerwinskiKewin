@@ -11,7 +11,7 @@
     <a class="link" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
     <a class="link" href="dataCzas.php">Data i Czas</a>
     <a class="link" href="formularz.html">Formularz</a>
-    <a class="link" href="daneDoBazy.html">Dane do Bazy</a>
+    <a class="link" href="daneDoBazy.php">Dane do Bazy</a>
 </div>
     
 <?php
