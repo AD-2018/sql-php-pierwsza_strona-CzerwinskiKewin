@@ -46,7 +46,7 @@ label {
   padding-right:20px;
 }
 
-input {
+input[type=number] {
   margin-left:100px;
   border:2px solid darkorchid;
 }
