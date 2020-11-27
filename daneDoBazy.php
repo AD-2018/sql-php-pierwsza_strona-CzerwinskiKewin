@@ -28,7 +28,7 @@
 <?php
 require_once("connect.php");
 echo("<br>");
-echo("<h1>Tabela pracowników<h1>");
+echo("<h3>Tabela pracowników</h3>");
 $sql = "SELECT * FROM pracownicy";
 $wynik = mysqli_query($conn, $sql);
 
