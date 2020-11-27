@@ -27,19 +27,29 @@
 
 <?php
 require_once("connect.php");
-
+echo("<br>");
+echo("<h1>Tabela pracowników<h1>");
 $sql = "SELECT * FROM pracownicy";
 $wynik = mysqli_query($conn, $sql);
 
     echo ("<br>");
     echo($sql);
     echo('<table border="1">');
-    echo('<th>ID</th><th>Imię</th><th>Dział</th><th>Zarobki</th><th>Data urodzenia</th>');
+    echo('<th>ID</th><th>Imię</th><th>Dział</th><th>Zarobki</th><th>Data urodzenia</th><th>Usuwanie pracowników</th>');
 
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
         echo('<tr>');
-        echo('<td>'.$wiersz['id_pracownicy'].'</td>'.'<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['dzial'].'</td>'.'<td>'.$wiersz['zarobki'].'</td>'.'<td>'.$wiersz['data_urodzenia'].'</td>');
+        echo('<td>'.$wiersz['id_pracownicy'].'</td>'.'<td>'.$wiersz['imie'].'</td>'.'<td>'.$wiersz['dzial'].'</td>'.'<td>'.$wiersz['zarobki'].'</td>'.'<td>'.$wiersz['data_urodzenia'].'</td>'.
+	     
+	     '<td>
+	    
+	     <form action="delete.php" method="POST">
+  		<input type="number" name="id" value="'.$row['id_pracownicy'].'"></br>
+   		<input type="submit" value="Usuń pracownika">
+	     </form>
+	     
+	     </td>');
         echo('</tr>');
     }
 
