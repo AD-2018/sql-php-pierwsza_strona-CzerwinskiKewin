@@ -46,7 +46,7 @@ label {
   padding-right:20px;
 }
 
-input[type=text] {
+input {
   padding-left:50px;
   border:2px solid darkorchid;
 }
