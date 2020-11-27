@@ -8,6 +8,15 @@
 </head>
 <body>
 	
+<div class="diw">
+    <a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a>
+    <a class="link" href="pracownicyOrganizacja.php">Pracownicy i Organizacja</a>
+    <a class="link" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
+    <a class="link" href="dataCzas.php">Data i Czas</a>
+    <a class="link" href="formularz.html">Formularz</a>
+    <a class="link" href="index.php">Strona Główna</a>
+</div>
+	
 <h3>Dodawanie pracownika</h3>
 <form action="insert.php" method="POST">
 	<label>Imię </label><input type="text" name="imie"></br>
