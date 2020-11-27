@@ -42,3 +42,7 @@ hr {
   border: 2px dashed deeppink;
 }
 
+label {
+  margin-right:20px;
+}
+
