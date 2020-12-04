@@ -54,7 +54,7 @@ $wynik = mysqli_query($conn, $sql);
 	     '<td>
 	    
 	     <form action="delete.php" method="POST">
-  		<input type="hidden" name="id" value="'.$wiersz['id_pracownicy'].'">
+  		<input type="text" name="id" value="'.$wiersz['id_pracownicy'].'" hidden>
    		<input type="submit" value="Usuń pracownika">
 	     </form>
 	     
