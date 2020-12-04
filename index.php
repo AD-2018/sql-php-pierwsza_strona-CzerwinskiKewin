@@ -12,6 +12,7 @@
     <a class="link" href="dataCzas.php">Data i Czas</a>
     <a class="link" href="formularz.html">Formularz</a>
     <a class="link" href="daneDoBazy.php">Dane do Bazy</a>
+    <a class="link" href="biblioteka.php">Biblioteka</a>
 </div>
     
 <?php
