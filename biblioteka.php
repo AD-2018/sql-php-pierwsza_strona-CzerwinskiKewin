@@ -18,12 +18,20 @@ echo("<hr/>");
 echo("<h1>Biblioteka</h1>");
     
 require_once("connect.php");
+  
+    
+echo('<label for="bibl_autor">Autor:</label>');
+echo('<select id="bibl_autor">');
+    echo('<option value="id_autor"></option>');
+    echo('<option value="autor"></option>');
+echo('</select>');
+   
     
 $sql = "SELECT * FROM bibl_autor";
 $wynik = mysqli_query($conn, $sql);
     
     echo("<br>");
-    echo("Zadanie 1");
+    echo("Autorzy");
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
@@ -44,7 +52,7 @@ $sql = "SELECT * FROM bibl_tytul";
 $wynik = mysqli_query($conn, $sql);
     
     echo("<br>");
-    echo("Zadanie 2");
+    echo("Tytuły");
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
@@ -65,7 +73,7 @@ $sql = "SELECT * FROM bibl_book";
 $wynik = mysqli_query($conn, $sql);
     
     echo("<br>");
-    echo("Zadanie 3");
+    echo("Tabele");
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
@@ -86,7 +94,7 @@ $sql = "SELECT id_book, autor, tytul, wypoz FROM bibl_book, bibl_tytul, bibl_aut
 $wynik = mysqli_query($conn, $sql);
     
     echo("<br>");
-    echo("Zadanie 4");
+    echo("Książki i Autorzy");
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
