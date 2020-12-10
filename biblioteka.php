@@ -102,3 +102,8 @@ $wynik = mysqli_query($conn, $sql);
     echo('</table>');
     
 echo("<br>");
+    
+?>
+    
+</body>
+</html>
