@@ -81,3 +81,24 @@ $wynik = mysqli_query($conn, $sql);
     echo('</table>');
     
 echo("<br>");
+    
+$sql = "SELECT id_book, autor, tytul, wypoz FROM bibl_book, bibl_tytul, bibl_autor WHERE bibl_tytul.id_tytul = bibl_book.id_tytul AND bibl_autor.id_autor = bibl_book.id_autor";
+$wynik = mysqli_query($conn, $sql);
+    
+    echo("<br>");
+    echo("Zadanie 4");
+    echo("<br>");
+    echo($sql);
+    echo('<table border="1">');
+    echo('<th>ID książki</th><th>Autor</th><th>Tytuł</th><th>Wypożyczenie</th>');
+
+    while($wiersz=mysqli_fetch_assoc($wynik))
+    {
+        echo('<tr>');
+        echo('<td>'.$wiersz['id_book'].'</td>'.'<td>'.$wiersz['autor'].'</td>'.'<td>'.$wiersz['tytul'].'</td>'.'<td>'.$wiersz['wypoz'].'</td>');
+        echo('</tr>');
+    }
+
+    echo('</table>');
+    
+echo("<br>");
