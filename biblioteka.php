@@ -34,7 +34,7 @@ echo('</select>');
     
 echo("<br>");
     
-$sql = "SELECT * FROM bibl_autor";
+$sql = "SELECT * FROM bibl_tytul";
 $wynik = mysqli_query($conn, $sql);
     
 echo('<label for="Ksiazka">Książka:</label>');
