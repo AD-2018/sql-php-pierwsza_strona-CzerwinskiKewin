@@ -19,11 +19,17 @@ echo("<h1>Biblioteka</h1>");
     
 require_once("connect.php");
   
-    
-echo('<label for="bibl_autor">Autor:</label>');
-echo('<select id="bibl_autor">');
-    echo('<option value="id_autor"></option>');
-    echo('<option value="autor"></option>');
+$sql = "SELECT * FROM bibl_autor";
+$wynik = mysqli_query($conn, $sql);
+echo ($sql);
+
+echo('<select name="Autor: ">');
+    while($wiersz=mysqli_fetch_assoc($wynik))
+    {
+        echo'<option value="'.$wiersz['id_autor'].'">';
+        echo($wiersz['autor']);
+        echo"</option>"; 
+    }
 echo('</select>');
    
     
