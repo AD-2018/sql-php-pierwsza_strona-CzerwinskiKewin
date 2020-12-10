@@ -31,6 +31,23 @@ echo('<select name="Autor">');
         echo"</option>"; 
     }
 echo('</select>');
+    
+echo("<br>");
+    
+$sql = "SELECT * FROM bibl_autor";
+$wynik = mysqli_query($conn, $sql);
+    
+echo('<label for="Ksiazka">Książka:</label>');
+echo('<select name="Ksiazka">');
+    while($wiersz=mysqli_fetch_assoc($wynik))
+    {
+        echo'<option value="'.$wiersz['id_tytul'].'">';
+        echo($wiersz['tytul']);
+        echo"</option>"; 
+    }
+echo('</select>');
+    
+echo("<br>");
    
     
 $sql = "SELECT * FROM bibl_autor";
@@ -58,7 +75,7 @@ $sql = "SELECT * FROM bibl_tytul";
 $wynik = mysqli_query($conn, $sql);
     
     echo("<br>");
-    echo("Tytuły");
+    echo("Ksiązki");
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
