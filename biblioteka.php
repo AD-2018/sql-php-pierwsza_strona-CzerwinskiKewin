@@ -21,9 +21,9 @@ require_once("connect.php");
   
 $sql = "SELECT * FROM bibl_autor";
 $wynik = mysqli_query($conn, $sql);
-echo ($sql);
-
-echo('<select name="Autor: ">');
+    
+echo('<label for="Autor">Autor:</label>');
+echo('<select name="Autor">');
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
         echo'<option value="'.$wiersz['id_autor'].'">';
