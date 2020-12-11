@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+
 <div class="diw">
     <a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a>
     <a class="link" href="pracownicyOrganizacja.php">Pracownicy i Organizacja</a>
@@ -15,12 +15,16 @@
     <a class="link" href="biblioteka.php">Biblioteka</a>
 </div>
     
-<?php
+<div class="strona">
     
-echo("<h1>Kewin Czerwiński</h1>");
-echo("<hr/>");
-echo("<h1>Pracownicy</h1>");
-   
+<?php
+
+echo('<div class="tytul">');
+    echo("<h1>Kewin Czerwiński</h1>");
+    echo("<hr/>");
+    echo("<h1>Pracownicy</h1>");
+echo('</div>');
+      
 require_once("connect.php");
 
 $sql = "SELECT * FROM pracownicy where dzial=2";
@@ -87,6 +91,8 @@ $wynik = mysqli_query($conn, $sql);
     
 echo("<br>");
 ?>
+    
+</div> 
     
 </body>
 </html>
