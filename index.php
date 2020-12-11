@@ -4,16 +4,6 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="diw">
-    <a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a>
-    <a class="link" href="pracownicyOrganizacja.php">Pracownicy i Organizacja</a>
-    <a class="link" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
-    <a class="link" href="dataCzas.php">Data i Czas</a>
-    <a class="link" href="formularz.html">Formularz</a>
-    <a class="link" href="daneDoBazy.php">Dane do Bazy</a>
-    <a class="link" href="biblioteka.php">Biblioteka</a>
-</div>
     
 <div class="strona">
     
@@ -23,6 +13,18 @@ echo('<div class="tytul">');
     echo("<h1>Kewin Czerwiński</h1>");
     echo("<hr/>");
     echo("<h1>Pracownicy</h1>");
+echo('</div>');
+    
+echo('<div class="linki">'); 
+    echo('<div class="diw">');
+        echo('<a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a>');
+        echo('<a class="link" href="pracownicyOrganizacja.php">Pracownicy i Organizacja</a>');
+        echo('<a class="link" href="funkcjeAgregujace.php">Funkcje Agregujące</a>');
+        echo('<a class="link" href="dataCzas.php">Data i Czas</a>');
+        echo('<a class="link" href="formularz.html">Formularz</a>');
+        echo('<a class="link" href="daneDoBazy.php">Dane do Bazy</a>');
+        echo('<a class="link" href="biblioteka.php">Biblioteka</a>');
+    echo('</div>');
 echo('</div>');
       
 require_once("connect.php");
