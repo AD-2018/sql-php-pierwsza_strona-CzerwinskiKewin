@@ -17,13 +17,13 @@ echo('</div>');
     
 echo('<div class="linki">'); 
     echo('<div class="diw">');
-        echo('<a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a>');
-        echo('<a class="link" href="pracownicyOrganizacja.php">Pracownicy i Organizacja</a>');
-        echo('<a class="link" href="funkcjeAgregujace.php">Funkcje Agregujące</a>');
-        echo('<a class="link" href="dataCzas.php">Data i Czas</a>');
-        echo('<a class="link" href="formularz.html">Formularz</a>');
-        echo('<a class="link" href="daneDoBazy.php">Dane do Bazy</a>');
-        echo('<a class="link" href="biblioteka.php">Biblioteka</a>');
+        echo('<a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a><br>');
+        echo('<a class="link" href="pracownicyOrganizacja.php">Pracownicy i Organizacja</a><br>');
+        echo('<a class="link" href="funkcjeAgregujace.php">Funkcje Agregujące</a><br>');
+        echo('<a class="link" href="dataCzas.php">Data i Czas</a><br>');
+        echo('<a class="link" href="formularz.html">Formularz</a><br>');
+        echo('<a class="link" href="daneDoBazy.php">Dane do Bazy</a><br>');
+        echo('<a class="link" href="biblioteka.php">Biblioteka</a><br>');
     echo('</div>');
 echo('</div>');
       
