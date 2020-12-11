@@ -14,7 +14,7 @@ th{
 }
 
 body {
-  background-color: black;
+  background-color: mediumpurple;
   color: garkgoldenrod;
   font-family: Comic Sans MS;
 }
@@ -52,7 +52,7 @@ input[type=number] {
 }
 
 .strona {
-  background-color: darkorchid;
+  background-color: black;
   display: flex;
   flex-wrap: wrap;
 }
@@ -64,11 +64,11 @@ input[type=number] {
 
 .linki {
   background-color: golden;
-  width: 10%;
+  width: 15%;
 }
 
 .zawartosc {
   background-color: mediumpurple;
-  width: 90%;
+  width: 85%;
 }
 
