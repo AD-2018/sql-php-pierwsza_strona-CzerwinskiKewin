@@ -44,12 +44,12 @@ hr {
 }
 
 label {
-  padding-right:20px;
+  padding-right: 20px;
 }
 
 input[type=number] {
-  margin-left:100px;
-  border:2px solid darkorchid;
+  margin-left: 100px;
+  border: 2px solid darkorchid;
 }
 
 .strona {
@@ -71,5 +71,6 @@ input[type=number] {
 .zawartosc {
   background-color: lightgreen;
   width: 60%;
+  margin-left: 30px;
 }
 
