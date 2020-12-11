@@ -26,7 +26,8 @@ echo('<div class="tytul">');
 echo('</div>');
       
 require_once("connect.php");
-
+    
+echo('<div class="zawartosc">');
 $sql = "SELECT * FROM pracownicy where dzial=2";
 $wynik = mysqli_query($conn, $sql);
 
@@ -90,6 +91,8 @@ $wynik = mysqli_query($conn, $sql);
     echo('</table>');
     
 echo("<br>");
+    
+echo('</div>');
 ?>
     
 </div> 
