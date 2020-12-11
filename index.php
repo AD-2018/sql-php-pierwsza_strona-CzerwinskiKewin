@@ -17,7 +17,10 @@ echo('</div>');
     
 echo('<div class="linki">'); 
     echo('<div class="diw">');
-        echo('<a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a><br>');
+        echo('<a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a><br><br>');
+        echo("<br>");
+        echo("<br>");
+        echo("<br>");
         echo('<a class="link" href="pracownicyOrganizacja.php">Pracownicy i Organizacja</a><br>');
         echo('<a class="link" href="funkcjeAgregujace.php">Funkcje Agregujące</a><br>');
         echo('<a class="link" href="dataCzas.php">Data i Czas</a><br>');
