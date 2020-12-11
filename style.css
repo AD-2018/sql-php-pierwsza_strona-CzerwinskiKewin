@@ -35,8 +35,6 @@ h1 {
 }
 
 .diw{
-  margin-top:35px;
-  margin-bottom:35px;
   margin: 35px;
 }
 
@@ -66,7 +64,7 @@ input[type=number] {
 
 .linki {
   background-color: lightblue;
-  width: 30%;
+  width: 15%;
 }
 
 .zawartosc {
