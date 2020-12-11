@@ -50,3 +50,14 @@ input[type=number] {
   margin-left:100px;
   border:2px solid darkorchid;
 }
+
+.strona {
+  background-color: darkorchid;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tytul {
+  background-color: red;
+  width: 100%;
+}
