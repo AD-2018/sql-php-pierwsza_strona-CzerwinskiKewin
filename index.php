@@ -12,7 +12,7 @@
 echo('<div class="tytul">');
     echo("<br>");
     echo('<a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a>');
-    echo("<h1>Kewin Czerwińskix</h1>");
+    echo("<h1>Kewin Czerwiński</h1>");
     echo("<hr/>");
     echo("<h1>Pracownicy</h1>");
 echo('</div>');
