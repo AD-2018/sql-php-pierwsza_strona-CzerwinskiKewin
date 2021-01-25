@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
   <meta name="viewport" content="width=device-width">
   <title>Prosty Formularz</title>
 </head>
@@ -10,15 +10,15 @@
 	
 <div class="diw">
     <a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a>
-    <a class="link" href="pracownicyOrganizacja.php">Pracownicy i Organizacja</a>
-    <a class="link" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
-    <a class="link" href="dataCzas.php">Data i Czas</a>
-    <a class="link" href="formularz.html">Formularz</a>
-    <a class="link" href="index.php">Strona Główna</a>
+    <a class="link" href="/pracownicy/pracownicyOrganizacja.php">Pracownicy i Organizacja</a>
+    <a class="link" href="/pracownicy/funkcjeAgregujace.php">Funkcje Agregujące</a>
+    <a class="link" href="/pracownicy/dataCzas.php">Data i Czas</a>
+    <a class="link" href="/pracownicy/formularz.html">Formularz</a>
+    <a class="link" href="/index.php">Strona Główna</a>
 </div>
 	
 <h3>Dodawanie pracownika</h3>
-<form action="insert.php" method="POST">
+<form action="/insert.php" method="POST">
 	<label>Imię </label><input type="text" name="imie"></br>
 	<label>Dział </label><input type="number" name="dzial"></br>
 	<label>Zarobki </label><input type="number" name="zarobki"></br>
@@ -29,13 +29,13 @@
 <br>
 
 <h3>Usuwanie pracownika</h3>
-<form action="delete.php" method="POST">
+<form action="/pracownicy/delete.php" method="POST">
    <label>ID pracownika </label><input type="number" name="id"></br>
    <input type="submit" value="Usuń pracownika">
 </form>
 
 <?php
-require_once("connect.php");
+require_once("../connect.php");
 echo("<br>");
 echo("<h3>Tabela pracowników</h3>");
 $sql = "SELECT * FROM pracownicy";
