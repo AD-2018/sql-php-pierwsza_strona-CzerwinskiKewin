@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="/style.css">
 </head>
 <body>
     
 <div class="diw">
     <a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a>
-    <a class="link" href="index.php">Strona Główna</a>
-    <a class="link" href="funkcjeAgregujace.php">Funkcje Agregujące</a>
-    <a class="link" href="dataCzas.php">Data i Czas</a>
+    <a class="link" href="/index.php">Strona Główna</a>
+    <a class="link" href="/pracownicy/funkcjeAgregujace.php">Funkcje Agregujące</a>
+    <a class="link" href="/pracownicy/dataCzas.php">Data i Czas</a>
 </div>
     
 <?php
@@ -17,7 +17,7 @@ echo("<h1>Kewin Czerwiński</h1>");
 echo("<hr/>");
 echo("<h1>Pracownicy i Organizacja</h1>");
     
-require_once("connect.php");
+require_once("/connect.php");
     
 $sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia FROM pracownicy,organizacja where id_org=dzial";
 $wynik = mysqli_query($conn, $sql);
