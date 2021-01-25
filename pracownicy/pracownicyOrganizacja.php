@@ -17,7 +17,7 @@ echo("<h1>Kewin Czerwiński</h1>");
 echo("<hr/>");
 echo("<h1>Pracownicy i Organizacja</h1>");
     
-require_once("https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin/blob/main/connect.php");
+require_once("../connect.php");
     
 $sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia FROM pracownicy,organizacja where id_org=dzial";
 $wynik = mysqli_query($conn, $sql);
