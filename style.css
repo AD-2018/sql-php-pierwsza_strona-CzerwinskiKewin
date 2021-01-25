@@ -52,7 +52,7 @@ input[type=number] {
 }
 
 .strona {
-  background-color: black;
+  background-color: mediumpurple; 
   display: flex;
   flex-wrap: wrap;
 }
