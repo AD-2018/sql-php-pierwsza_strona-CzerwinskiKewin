@@ -14,7 +14,7 @@ th{
 }
 
 body {
-  background-color: black;
+  background-color: mediumpurple;
   color: garkgoldenrod;
   font-family: Comic Sans MS;
 }
@@ -52,7 +52,7 @@ input[type=number] {
 }
 
 .strona {
-  background-color: mediumpurple; 
+  background-color: black; 
   display: flex;
   flex-wrap: wrap;
 }
