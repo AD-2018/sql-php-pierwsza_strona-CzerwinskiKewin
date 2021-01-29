@@ -31,9 +31,13 @@ echo('<select name="Autor">');
         echo"</option>"; 
     }
 echo('</select>');
-    
+
+if('<option value="5">')
+{
+    echo("xf");
+}
 echo("<br>");
-    
+   
 $sql = "SELECT * FROM bibl_tytul";
 $wynik = mysqli_query($conn, $sql);
     
