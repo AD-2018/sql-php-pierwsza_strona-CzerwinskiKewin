@@ -24,6 +24,7 @@ h1 {
 }
 
 .link{
+  overflow: hidden;
   display: inline-block;
   white-space: nowrap;
   background-color: sienna;
