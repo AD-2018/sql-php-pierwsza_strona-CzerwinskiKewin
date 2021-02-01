@@ -32,9 +32,12 @@ echo('<select name="Autor">');
     }
 echo('</select>');
 
+echo('<br>');
+echo('<h1>Dodaj autora</h1>');
 echo('<form action="/ksiazki/autor.php" method="POST">
-        <label>Autor</label><input type="text" name="autor"></br>
-        <input type="submit" value="dodaj autora">');
+        <label>Autor</label><input type="text" name="autor">
+        </br>
+        <input type="submit" value="Dodaj autora">');
 
 echo("<br>");
    
