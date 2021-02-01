@@ -32,10 +32,10 @@ echo('<select name="Autor">');
     }
 echo('</select>');
 
-if('<option value="5">')
-{
-    echo("xf");
-}
+echo('<form action="/ksiazki/autor.php" method="POST">
+        <label>Autor</label><input type="text" name="autor"></br>
+        <input type="submit" value="dodaj autora">');
+
 echo("<br>");
    
 $sql = "SELECT * FROM bibl_tytul";
