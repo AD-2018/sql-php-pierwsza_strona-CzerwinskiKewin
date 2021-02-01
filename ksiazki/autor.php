@@ -16,6 +16,7 @@ echo $sql;
 
 if ($conn->query($sql) === TRUE) {
   echo "dodano";
+  header('Location: https://znw.herokuapp.com/ksiazki/biblioteka.php');
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
