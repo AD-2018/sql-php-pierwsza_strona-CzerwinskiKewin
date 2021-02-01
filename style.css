@@ -24,6 +24,7 @@ h1 {
 }
 
 .link{
+  display: inline-block;
   background-color: sienna;
   color:deepskyblue;
   padding:10px;
