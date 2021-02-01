@@ -25,6 +25,7 @@ h1 {
 
 .link{
   display: inline-block;
+  white-space: nowrap;
   background-color: sienna;
   color:deepskyblue;
   padding:10px;
