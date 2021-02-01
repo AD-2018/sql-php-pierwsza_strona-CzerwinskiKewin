@@ -54,7 +54,8 @@ input[type=number] {
 }
 
 .strona {
-  background-color: black; 
+  background-color: black;
+  width: 100%; 
   display: flex;
   flex-wrap: wrap;
 }
