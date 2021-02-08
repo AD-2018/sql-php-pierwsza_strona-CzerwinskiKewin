@@ -4,7 +4,12 @@ body {
     flex-wrap: wrap;
 }
 
-.s {
+.menu {
+    background-color: magenta;
+    padding: 10px;
+}
+
+.sidebar {
     background-color: yellow;
     padding: 10px;
     width: 10%;
@@ -18,7 +23,7 @@ body {
     margin: 5px;  
 }
 
-.f {
+.footer {
     background-color: blue;
     padding: 10px;
     width: 100%;
