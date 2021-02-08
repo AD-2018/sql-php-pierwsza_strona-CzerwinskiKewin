@@ -1,3 +1,9 @@
+body {
+    background-color: salmon;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .s {
     background-color: yellow;
     padding: 10px;
