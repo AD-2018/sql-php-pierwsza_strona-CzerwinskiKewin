@@ -35,6 +35,7 @@ echo('<div class="linki">');
         echo('<a class="link" href="/pracownicy/formularz.html">Formularz</a><br><br>');
         echo('<a class="link" href="/pracownicy/daneDoBazy.php">Dane do Bazy</a><br><br>');
         echo('<a class="link" href="/ksiazki/biblioteka.php">Biblioteka</a><br><br>');
+        echo('<a class="link" href="/flexbox/index.html">Flexbox</a><br><br>');
     echo('</div>');
 echo('</div>');
       
