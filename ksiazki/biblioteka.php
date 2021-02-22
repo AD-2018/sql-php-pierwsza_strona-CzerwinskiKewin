@@ -79,7 +79,16 @@ $wynik = mysqli_query($conn, $sql);
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
         echo('<tr>');
-        echo('<td>'.$wiersz['id_autor'].'</td>'.'<td>'.$wiersz['autor'].'</td>');
+        echo('<td>'.$wiersz['id_autor'].'</td>'.'<td>'.$wiersz['autor'].'</td>'.
+
+        '<td>
+       
+        <form action="delautor.php" method="POST">
+         <input type="text" name="id" value="'.$wiersz['id_autor'].'" hidden>
+          <input type="submit" value="Usuń autora">
+        </form>
+        
+        </td>');
         echo('</tr>');
     }
 
@@ -100,7 +109,16 @@ $wynik = mysqli_query($conn, $sql);
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
         echo('<tr>');
-        echo('<td>'.$wiersz['id_tytul'].'</td>'.'<td>'.$wiersz['tytul'].'</td>');
+        echo('<td>'.$wiersz['id_tytul'].'</td>'.'<td>'.$wiersz['tytul'].'</td>'.
+	     
+        '<td>
+       
+        <form action="deltytul.php" method="POST">
+         <input type="text" name="id" value="'.$wiersz['id_tytul'].'" hidden>
+          <input type="submit" value="Usuń tytuł">
+        </form>
+    
+        </td>');
         echo('</tr>');
     }
 
