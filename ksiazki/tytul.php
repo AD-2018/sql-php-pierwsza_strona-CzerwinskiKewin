@@ -10,7 +10,7 @@ if ($conn->connect_error) {
 }
 
 //definiujemy zapytanie $sql
-$sql = "INSERT INTO bibl_autor(id_tytul, tytul) VALUES(null, '".$_POST['tytul']."');
+$sql = "INSERT INTO bibl_autor(id_tytul, tytul) VALUES(null, '".$_POST['tytul']."')";
 
 echo $sql;
 
