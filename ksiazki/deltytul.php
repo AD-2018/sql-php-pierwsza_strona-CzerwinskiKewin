@@ -1,5 +1,5 @@
 <?php
-echo("jestes w delautor.php <br>");
+echo("jestes w deltytul.php <br>");
 echo $_POST['id'];
 
 require_once("../connect.php");
@@ -10,7 +10,7 @@ if ($conn->connect_error) {
 }
 
 //definiujemy zapytanie $sql
-$sql = "DELETE FROM bibl_autor WHERE id_autor=".$_POST['id'];
+$sql = "DELETE FROM bibl_tytul WHERE id_tytul=".$_POST['id'];
 
 echo $sql;
 
