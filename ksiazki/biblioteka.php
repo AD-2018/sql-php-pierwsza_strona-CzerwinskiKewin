@@ -40,6 +40,15 @@ echo('<form action="/ksiazki/autor.php" method="POST">
         <input type="submit" value="Dodaj autora">');
 
 echo("<br>");
+
+echo('<br>');
+echo('<h1>Dodaj książkę</h1>');
+echo('<form action="/ksiazki/tytul.php" method="POST">
+        <label>Książka</label><input type="text" name="tytul">
+        </br>
+        <input type="submit" value="Dodaj książkę">');
+
+echo("<br>");
    
 $sql = "SELECT * FROM bibl_tytul";
 $wynik = mysqli_query($conn, $sql);
