@@ -74,7 +74,7 @@ $wynik = mysqli_query($conn, $sql);
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
-    echo('<th>ID autora</th><th>Autor</th>');
+    echo('<th>ID autora</th><th>Autor</th><th>Usuń autora</th>');
 
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
@@ -85,7 +85,7 @@ $wynik = mysqli_query($conn, $sql);
        
         <form action="delautor.php" method="POST">
          <input type="text" name="id" value="'.$wiersz['id_autor'].'" hidden>
-          <input type="submit" value="Usuń autora">
+          <input type="submit" value="Usuń">
         </form>
         
         </td>');
@@ -104,7 +104,7 @@ $wynik = mysqli_query($conn, $sql);
     echo("<br>");
     echo($sql);
     echo('<table border="1">');
-    echo('<th>ID tytułu</th><th>Tytuł</th>');
+    echo('<th>ID tytułu</th><th>Tytuł</th><th>Usuń tytuł</th>');
 
     while($wiersz=mysqli_fetch_assoc($wynik))
     {
@@ -115,7 +115,7 @@ $wynik = mysqli_query($conn, $sql);
        
         <form action="deltytul.php" method="POST">
          <input type="text" name="id" value="'.$wiersz['id_tytul'].'" hidden>
-          <input type="submit" value="Usuń tytuł">
+          <input type="submit" value="Usuń">
         </form>
     
         </td>');
