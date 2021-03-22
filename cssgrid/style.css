@@ -1,4 +1,3 @@
-  
 * {
     margin: 0;
     padding: 0;
@@ -10,37 +9,33 @@
     display: grid;
     grid-template-columns: 1fr 2fr 0.5fr;
     grid-template-areas: 
-    "a a e"
-    "b c e"
-    "d d d";
+    "a b e"
+    "a c e"
+    "a d e";
   }
 
     header{
         background-color: red;
         grid-area: a;
-        height: 20vh;
+        height: 100vh;
     }
-
-
     nav {
         background-color: lightgreen;
         grid-area: b;
-        height: 33vh;
+        height: 34vh
     }
     main {
-        background-color: aqua;
+        background-color: skyblue;
         grid-area: c;
-        height: 33vh;
+        height: 32vh
     }
     aside {
         grid-area: e;
-        background-color: green;
-        height: 33vh;
-        
-        
+        background-color: orange;
+        height: 100vh;
     }
     footer {
         background-color: yellow;
         grid-area: d;
-    
+        height: 34vh
     }
