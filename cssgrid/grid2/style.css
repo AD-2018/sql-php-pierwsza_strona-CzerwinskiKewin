@@ -1,18 +1,17 @@
 * {
     margin: 0;
     padding: 0;
-  }
-  .container {
+}
+.container {
     background-color: rgb(50, 117, 205);
-    padding: 5px;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 2fr 0.5fr;
+    grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 
-    "a b e"
-    "a c e"
-    "a d e";
-  }
+    "a b b b"
+    "a c c e"
+    "a d f e";
+}
 
     header{
         background-color: red;
@@ -32,10 +31,16 @@
     aside {
         grid-area: e;
         background-color: orange;
-        height: 100vh;
+        height: 66vh;
     }
     footer {
         background-color: yellow;
         grid-area: d;
-        height: 34vh
+        height: 34vh;
+    }
+    .pole
+    {
+        background-color: yellow;
+        grid-area: f;
+        height: 34vh;
     }
