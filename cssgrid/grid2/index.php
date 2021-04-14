@@ -34,7 +34,7 @@
         $wynik = mysqli_query($conn, $sql);
             
             echo("<br>");
-            echo("<h1>Prawnicy</h1>");
+            echo("Prawnicy");
             echo("<br>");
             echo($sql);
             echo('<table border="1">');
@@ -63,7 +63,7 @@
         $wynik = mysqli_query($conn, $sql);
             
             echo("<br>");
-            echo("<h1>Sprawy sadowe</h1>");
+            echo("Sprawy sadowe");
             echo("<br>");
             echo($sql);
             echo('<table border="1">');
@@ -88,7 +88,7 @@
         $wynik = mysqli_query($conn, $sql);
             
             echo("<br>");
-            echo("<h1>Kancelaria prawna</h1>");
+            echo("Kancelaria prawna");
             echo("<br>");
             echo($sql);
             echo('<table border="1">');

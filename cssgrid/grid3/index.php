@@ -34,7 +34,7 @@
         $wynik = mysqli_query($conn, $sql);
             
             echo("<br>");
-            echo("<h1>Osoby</h1>");
+            echo("Osoby");
             echo("<br>");
             echo($sql);
             echo('<table border="1">');
@@ -63,7 +63,7 @@
         $wynik = mysqli_query($conn, $sql);
             
             echo("<br>");
-            echo("<h1>Role</h1>");
+            echo("Role");
             echo("<br>");
             echo($sql);
             echo('<table border="1">');
@@ -91,7 +91,7 @@
         $wynik = mysqli_query($conn, $sql);
             
             echo("<br>");
-            echo("<h1>System informatyczny</h1>");
+            echo("System informatyczny");
             echo("<br>");
             echo($sql);
             echo('<table border="1">');
