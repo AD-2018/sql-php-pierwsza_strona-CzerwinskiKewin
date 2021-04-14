@@ -6,7 +6,7 @@
     background-color: rgb(50, 117, 205);
     height: 100vh;
     display: grid;
-    grid-template-columns: 0.2fr 1fr 1fr 1fr;
+    grid-template-columns: 0.1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "l a b e"
     "l a c e"
