@@ -41,7 +41,7 @@
       <main>
       <?php
         require_once("../../connect.php");
-        $sql = "SELECT * FROM sys_rola";
+        $sql = "SELECT * FROM fir_projekt";
         $wynik = mysqli_query($conn, $sql);
             
             echo("<br>");
