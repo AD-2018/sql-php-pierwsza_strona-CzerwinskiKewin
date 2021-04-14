@@ -79,7 +79,7 @@
             while($wiersz=mysqli_fetch_assoc($wynik))
             {
                 echo('<tr>');
-                echo('<td>'.$wiersz['id_sklep'].'</td>'.'<td>'.$wiersz['producent'].'</td>'.'<td>'.$wiersz['artykul'].'</td>');
+                echo('<td>'.$wiersz['id_sklep'].'</td><td>'.$wiersz['producent'].'</td><td>'.$wiersz['artykul'].'</td>');
                 echo('</tr>');
             }
 
