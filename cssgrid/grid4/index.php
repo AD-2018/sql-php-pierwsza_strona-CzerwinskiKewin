@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>CSS Grid</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container">
@@ -34,7 +34,7 @@
         $wynik = mysqli_query($conn, $sql);
             
             echo("<br>");
-            echo("Pracownicy");
+            echo("<h1>Pracownicy</h1>");
             echo("<br>");
             echo($sql);
             echo('<table border="1">');
@@ -63,7 +63,7 @@
         $wynik = mysqli_query($conn, $sql);
             
             echo("<br>");
-            echo("Projekty");
+            echo("<h1>Projekty</h1>");
             echo("<br>");
             echo($sql);
             echo('<table border="1">');
@@ -88,7 +88,7 @@
         $wynik = mysqli_query($conn, $sql);
             
             echo("<br>");
-            echo("Firma");
+            echo("<h1>Firma</h1>");
             echo("<br>");
             echo($sql);
             echo('<table border="1">');
