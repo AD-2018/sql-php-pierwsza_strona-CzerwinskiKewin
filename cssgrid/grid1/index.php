@@ -66,7 +66,7 @@
       <aside>
       <?php
         require_once("../../connect.php");
-        $sql = "SELECT id_sklep, producent, artykul, FROM skl_sklep, skl_producent, skl_artykul WHERE skl_producent.id_producent = skl_sklep.id_producent AND skl_artykul.id_artykul = skl_sklep.id_artykul";
+        $sql = "SELECT id_sklep, producent, artykul FROM skl_sklep, skl_producent, skl_artykul WHERE skl_producent.id_producent = skl_sklep.id_producent AND skl_artykul.id_artykul = skl_sklep.id_artykul";
         $wynik = mysqli_query($conn, $sql);
             
             echo("<br>");
