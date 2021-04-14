@@ -6,11 +6,11 @@
     background-color: rgb(50, 117, 205);
     height: 100vh;
     display: grid;
-    grid-template-columns: 0.66fr 0.34fr 0.34fr 0.66fr 0.5fr 0.5fr;
+    grid-template-columns: 0.1fr 0.66fr 0.34fr 0.34fr 0.66fr 0.5fr 0.5fr;
     grid-template-areas: 
-    "a a b b f f"
-    "c g g h e e"
-    "i i d d e e";
+    "l a a b b f f"
+    "l c g g h e e"
+    "l i i d d e e";
   }
 
     header{
@@ -48,6 +48,28 @@
     .pole4 {
         background-color: magenta;
         grid-area: g;
+    }
+
+
+
+    .linki {
+        grid-area: l;
+        background-color: gold;
+    }
+
+    .link:hover{
+        background-color: deeppink;
+      }
+
+    .link{
+        width: 50px;
+        overflow: hidden;
+        display: inline-block;
+        white-space: nowrap;
+        background-color: sienna;
+        color:deepskyblue;
+        padding:10px;
+        margin-left:10px;
     }
 
     

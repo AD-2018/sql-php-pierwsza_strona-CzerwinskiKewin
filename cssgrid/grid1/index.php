@@ -13,6 +13,7 @@
             <br>
             <br>
             <br>
+            <a class="link" href="/index.php">Menu</a>
             <a class="link" href="grid1/index.php">Grid 1</a><br><br>
             <a class="link" href="grid2/index.php">Grid 2</a><br><br>
             <a class="link" href="grid3/index.php">Grid 3</a><br><br>

@@ -6,11 +6,11 @@
     background-color: rgb(50, 117, 205);
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "a a b"
-    "a a c"
-    "a a e";
+    "l a a b"
+    "l a a c"
+    "l a a e";
   }
 
     header{
@@ -28,4 +28,26 @@
     aside {
         grid-area: e;
         background-color: orange;
+    }
+
+
+
+    .linki {
+        grid-area: l;
+        background-color: gold;
+    }
+
+    .link:hover{
+        background-color: deeppink;
+      }
+
+    .link{
+        width: 50px;
+        overflow: hidden;
+        display: inline-block;
+        white-space: nowrap;
+        background-color: sienna;
+        color:deepskyblue;
+        padding:10px;
+        margin-left:10px;
     }
