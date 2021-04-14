@@ -39,11 +39,55 @@
       </nav>
 
       <main>
-        3
+      <?php
+        require_once("../../connect.php");
+        $sql = "SELECT * FROM skl_producent";
+        $wynik = mysqli_query($conn, $sql);
+            
+            echo("<br>");
+            echo("Artykuly");
+            echo("<br>");
+            echo($sql);
+            echo('<table border="1">');
+            echo('<th>ID artykulu</th><th>Artykul</th>');
+
+            while($wiersz=mysqli_fetch_assoc($wynik))
+            {
+                echo('<tr>');
+                echo('<td>'.$wiersz['id_artykul'].'</td>'.'<td>'.$wiersz['artykul'].'</td>');
+                echo('</tr>');
+            }
+
+            echo('</table>');
+            
+        echo("<br>");
+      ?>
       </main>
       <aside>
-        5
- </aside>
+      <?php
+        require_once("../../connect.php");
+        $sql = "SELECT id_sklep, producent, artykul, FROM skl_sklep, skl_producent, skl_autor WHERE skl_produkt.id_produkt = skl_sklep.id_produkt AND skl_producent.id_producent = skl_sklep.id_producent";
+        $wynik = mysqli_query($conn, $sql);
+            
+            echo("<br>");
+            echo("Sklep");
+            echo("<br>");
+            echo($sql);
+            echo('<table border="1">');
+            echo('<th>ID</th><th>Producent</th><th>Artykul</th>');
+
+            while($wiersz=mysqli_fetch_assoc($wynik))
+            {
+                echo('<tr>');
+                echo('<td>'.$wiersz['id_sklep'].'</td>'.'<td>'.$wiersz['producent'].'</td>'.'<td>'.$wiersz['artykul'].'</td>');
+                echo('</tr>');
+            }
+
+            echo('</table>');
+            
+        echo("<br>");
+      ?>
+      </aside>
       <footer>
         4
       </footer>
