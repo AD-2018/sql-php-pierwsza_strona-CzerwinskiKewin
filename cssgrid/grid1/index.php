@@ -11,7 +11,7 @@
     <div class="container">
       <header>
       <?php
-        require_once("../connect.php");
+        require_once("../../connect.php");
         $sql = "SELECT * FROM skl_producent";
         $wynik = mysqli_query($conn, $sql);
             
