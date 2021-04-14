@@ -38,3 +38,31 @@
         grid-area: d;
         height: 34vh
     }
+
+
+    .diw{
+        margin: 10px;
+    }
+
+    .linki {
+        background-color: gold;
+        width: 15%;
+    }
+
+    .link:hover{
+        background-color: deeppink;
+      }
+
+    .link{
+        width: 250px;
+        overflow: hidden;
+        display: inline-block;
+        white-space: nowrap;
+        background-color: sienna;
+        color:deepskyblue;
+        padding:10px;
+        margin-left:20px;
+    }
+
+
+
