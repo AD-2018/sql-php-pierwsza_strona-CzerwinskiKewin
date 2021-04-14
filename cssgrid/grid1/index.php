@@ -10,7 +10,6 @@
   <body>
     <div class="container">
       <div class="linki">
-        <div class="diw">
             <br>
             <br>
             <br>
@@ -26,7 +25,6 @@
             <a class="link" href="grid10/index.html">Grid 10</a><br><br>
             <a class="link" href="grid11/index.html">Grid 11</a><br><br>
             <a class="link" href="grid12/index.html">Grid 12</a><br><br>
-        </div>
       </div>
       <header>
       <?php

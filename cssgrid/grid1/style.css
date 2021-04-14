@@ -40,14 +40,10 @@
     }
 
 
-    .diw{
-        margin: 10px;
-    }
 
     .linki {
         grid-area: l;
         background-color: gold;
-        width: 15%;
     }
 
     .link:hover{
@@ -55,7 +51,6 @@
       }
 
     .link{
-        width: 250px;
         overflow: hidden;
         display: inline-block;
         white-space: nowrap;
