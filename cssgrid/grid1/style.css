@@ -6,11 +6,11 @@
     background-color: rgb(50, 117, 205);
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.3fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "a b e"
-    "a c e"
-    "a d e";
+    "l a b e"
+    "l a c e"
+    "l a d e";
   }
 
     header{
@@ -45,6 +45,7 @@
     }
 
     .linki {
+        grid-area: l;
         background-color: gold;
         width: 15%;
     }
