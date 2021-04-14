@@ -41,7 +41,7 @@
       <main>
       <?php
         require_once("../../connect.php");
-        $sql = "SELECT * FROM skl_producent";
+        $sql = "SELECT * FROM skl_artykul";
         $wynik = mysqli_query($conn, $sql);
             
             echo("<br>");
@@ -66,7 +66,7 @@
       <aside>
       <?php
         require_once("../../connect.php");
-        $sql = "SELECT id_sklep, producent, artykul, FROM skl_sklep, skl_producent, skl_autor WHERE skl_produkt.id_produkt = skl_sklep.id_produkt AND skl_producent.id_producent = skl_sklep.id_producent";
+        $sql = "SELECT id_sklep, producent, artykul, FROM skl_sklep, skl_producent, skl_artykul WHERE skl_produkt.id_produkt = skl_sklep.id_produkt AND skl_producent.id_producent = skl_sklep.id_producent";
         $wynik = mysqli_query($conn, $sql);
             
             echo("<br>");
