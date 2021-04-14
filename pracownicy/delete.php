@@ -2,10 +2,7 @@
 echo("jestes w delete.php <br>");
 echo $_POST['id'];
 
-$servername = "mysql-kcz.alwaysdata.net";
-$username = "kcz";
-$password = "zaq1@WSX";
-$dbname = "kcz_20";
+require_once("../connect.php");
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
