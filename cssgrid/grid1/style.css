@@ -65,6 +65,7 @@
 
     table, td {
         background-color: goldenrod;
+        border-collapse: collapse;
         text-align: center;
         color: black;
     }
