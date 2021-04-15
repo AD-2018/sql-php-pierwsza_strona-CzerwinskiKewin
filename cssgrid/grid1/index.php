@@ -34,7 +34,7 @@
         $wynik = mysqli_query($conn, $sql);
             
             echo("<br>");
-            echo("Producenci");
+            echo("Producenci1");
             echo("<br>");
             echo($sql);
             echo('<table border="1">');
