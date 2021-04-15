@@ -61,3 +61,18 @@
         margin-left:10px;
     }
 
+
+
+    table, td {
+        background-color: goldenrod;
+        border-collapse: collapse;
+        text-align: center;
+        color: black;
+    }
+      
+    th {
+        text-align:center;
+        background-color: sienna;
+        color: black;
+    }
+
