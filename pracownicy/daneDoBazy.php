@@ -26,22 +26,22 @@ require_once("../connect.php");
 
 echo('<div class="zawartosc">');
 
-    echo("<h3>Dodawanie pracownika</h3>");
-    echo("<form action="/insert.php" method="POST">");
-    echo("<label>Imię </label><input type="text" name="imie"></br>");
-    echo("<label>Dział </label><input type="number" name="dzial"></br>");
-    echo("<label>Zarobki </label><input type="number" name="zarobki"></br>");
-    echo("<label>Data urodzenia </label><input type="date" name="data_urodzenia"></br>");
-    echo("<input type="submit" value="Dodaj pracownika">");
-    echo("</form>");
+    echo('<h3>Dodawanie pracownika</h3>');
+    echo('<form action="/insert.php" method="POST">');
+    echo('<label>Imię </label><input type="text" name="imie"></br>');
+    echo('<label>Dział </label><input type="number" name="dzial"></br>');
+    echo('<label>Zarobki </label><input type="number" name="zarobki"></br>');
+    echo('<label>Data urodzenia </label><input type="date" name="data_urodzenia"></br>');
+    echo('<input type="submit" value="Dodaj pracownika">');
+    echo('</form>');
 
     echo("<br>");
 
-    echo("<h3>Usuwanie pracownika</h3>");
-    echo("<form action="/pracownicy/delete.php" method="POST">");
-    echo("<label>ID pracownika </label><input type="number" name="id"></br>");
-    echo("<input type="submit" value="Usuń pracownika">");
-    echo("</form>");
+    echo('<h3>Usuwanie pracownika</h3>');
+    echo('<form action="/pracownicy/delete.php" method="POST">');
+    echo('<label>ID pracownika </label><input type="number" name="id"></br>');
+    echo('<input type="submit" value="Usuń pracownika">');
+    echo('</form>');
 
 echo("<br>");
 
