@@ -8,16 +8,16 @@
 </head>
 <body>
 
-<div class="diw">
-    <a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a>
-    <a class="link" href="/pracownicy/pracownicyOrganizacja.php">Pracownicy i Organizacja</a>
-    <a class="link" href="/pracownicy/funkcjeAgregujace.php">Funkcje Agregujące</a>
-    <a class="link" href="/pracownicy/dataCzas.php">Data i Czas</a>
-    <a class="link" href="/pracownicy/formularz.html">Formularz</a>
-    <a class="link" href="/index.php">Strona Główna</a>
-</div>
-	
 <div class="strona">
+
+<div class="tytul">
+    <br>
+    <a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a>
+    <h1>Kewin Czerwiński</h1>
+    <hr/>
+    <h1>Dane do Bazy</h1>
+</div>
+
 <h3>Dodawanie pracownika</h3>
 <form action="/insert.php" method="POST">
 	<label>Imię </label><input type="text" name="imie"></br>

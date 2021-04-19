@@ -5,18 +5,16 @@
 </head>
 <body>
     
-<div class="diw">
-    <a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a>
-    <a class="link" href="/pracownicy/pracownicyOrganizacja.php">Pracownicy i Organizacja</a>
-    <a class="link" href="/index.php">Strona Główna</a>
-    <a class="link" href="/pracownicy/dataCzas.php">Data i Czas</a>
-</div>
-
 <div class="strona">
+    
 <?php
-echo("<h1>Kewin Czerwiński</h1>");
-echo("<hr/>");
-echo("<h1>Funkcje Agregujące</h1>");
+echo('<div class="tytul">');
+    echo("<br>");
+    echo('<a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a>');
+    echo("<h1>Kewin Czerwiński</h1>");
+    echo("<hr/>");
+    echo("<h1>Funkcje Agregujace</h1>");
+echo('</div>');
 
 include_once("../menu.php");
     
