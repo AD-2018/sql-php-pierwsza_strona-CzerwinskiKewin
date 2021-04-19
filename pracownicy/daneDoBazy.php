@@ -7,7 +7,7 @@
   <title>Prosty Formularz</title>
 </head>
 <body>
-	
+
 <div class="diw">
     <a class="link" href="https://github.com/AD-2018/sql-php-pierwsza_strona-CzerwinskiKewin">Github</a>
     <a class="link" href="/pracownicy/pracownicyOrganizacja.php">Pracownicy i Organizacja</a>
@@ -17,6 +17,7 @@
     <a class="link" href="/index.php">Strona Główna</a>
 </div>
 	
+<div class="strona">
 <h3>Dodawanie pracownika</h3>
 <form action="/insert.php" method="POST">
 	<label>Imię </label><input type="text" name="imie"></br>
@@ -39,6 +40,8 @@
 include_once("menu.php");
 
 require_once("../connect.php");
+
+echo('<div class="zawartosc">');
 echo("<br>");
 echo("<h3>Tabela pracowników</h3>");
 $sql = "SELECT * FROM pracownicy";
@@ -68,7 +71,10 @@ $wynik = mysqli_query($conn, $sql);
     echo('</table>');
     
 echo("<br>");
+echo('</div>');
 ?>
+
+</div>
 
 </body>
 </html>

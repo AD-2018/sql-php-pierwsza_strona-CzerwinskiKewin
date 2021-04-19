@@ -12,6 +12,7 @@
     <a class="link" href="/index.php">Strona Główna</a>
 </div>
 
+<div class="strona">
 <?php
 echo("<h1>Kewin Czerwiński</h1>");
 echo("<hr/>");
@@ -21,6 +22,7 @@ include_once("../menu.php");
    
 require_once("../connect.php");
     
+echo('<div class="zawartosc">');
 $sql = "SELECT imie,nazwa_dzial,zarobki,data_urodzenia,year(curdate())-year(data_urodzenia) FROM pracownicy,organizacja where id_org=dzial";
 $wynik = mysqli_query($conn, $sql);
     
@@ -511,10 +513,10 @@ $wynik = mysqli_query($conn, $sql);
 echo("<br>");
     
 
-
-
-
+echo('</div>');
 ?>
+
+</div>
 
 </body>
 </html>

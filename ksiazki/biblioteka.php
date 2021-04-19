@@ -11,7 +11,8 @@
     <a class="link" href="/pracownicy/funkcjeAgregujace.php">Funkcje Agregujące</a>
     <a class="link" href="/pracownicy/dataCzas.php">Data i Czas</a>
 </div>
-    
+  
+<div class="strona">
 <?php
 echo("<h1>Kewin Czerwiński</h1>");
 echo("<hr/>");
@@ -21,6 +22,7 @@ include_once("menu.php");
 
 require_once("../connect.php");
   
+echo('<div class="zawartosc">');
 $sql = "SELECT * FROM bibl_autor";
 $wynik = mysqli_query($conn, $sql);
     
@@ -169,8 +171,10 @@ $wynik = mysqli_query($conn, $sql);
     echo('</table>');
     
 echo("<br>");
-    
+echo('</div>');    
 ?>
     
+</div>
+
 </body>
 </html>
