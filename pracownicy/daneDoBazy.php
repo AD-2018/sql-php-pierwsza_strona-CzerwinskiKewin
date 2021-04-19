@@ -35,6 +35,9 @@
 </form>
 
 <?php
+
+include_once("menu.php");
+
 require_once("../connect.php");
 echo("<br>");
 echo("<h3>Tabela pracowników</h3>");

@@ -16,7 +16,9 @@
 echo("<h1>Kewin Czerwiński</h1>");
 echo("<hr/>");
 echo("<h1>Biblioteka</h1>");
-    
+
+include_once("menu.php");
+
 require_once("../connect.php");
   
 $sql = "SELECT * FROM bibl_autor";
