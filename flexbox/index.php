@@ -10,7 +10,7 @@
   <body>
     <h1>FLEXBOX</h1>
     <?php
-    include_once("menu.php");
+    include_once("../menu.php");
     ?>
     <ul class="menu">
       <li class="header">
