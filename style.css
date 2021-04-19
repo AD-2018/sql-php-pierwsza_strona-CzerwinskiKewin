@@ -77,5 +77,6 @@ input[type=number] {
 
 .menu {
   list-style-type: none;
+  margin-left: -50px;
 }
 
