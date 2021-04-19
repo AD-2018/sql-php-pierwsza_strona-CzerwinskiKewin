@@ -18,23 +18,6 @@
     <h1>Dane do Bazy</h1>
 </div>
 
-<h3>Dodawanie pracownika</h3>
-<form action="/insert.php" method="POST">
-	<label>Imię </label><input type="text" name="imie"></br>
-	<label>Dział </label><input type="number" name="dzial"></br>
-	<label>Zarobki </label><input type="number" name="zarobki"></br>
-	<label>Data urodzenia </label><input type="date" name="data_urodzenia"></br>
-	<input type="submit" value="Dodaj pracownika">
-</form>
-
-<br>
-
-<h3>Usuwanie pracownika</h3>
-<form action="/pracownicy/delete.php" method="POST">
-   <label>ID pracownika </label><input type="number" name="id"></br>
-   <input type="submit" value="Usuń pracownika">
-</form>
-
 <?php
 
 include_once("../menu.php");
@@ -42,7 +25,26 @@ include_once("../menu.php");
 require_once("../connect.php");
 
 echo('<div class="zawartosc">');
+
+    echo("<h3>Dodawanie pracownika</h3>");
+    echo("<form action="/insert.php" method="POST">");
+    echo("<label>Imię </label><input type="text" name="imie"></br>");
+    echo("<label>Dział </label><input type="number" name="dzial"></br>");
+    echo("<label>Zarobki </label><input type="number" name="zarobki"></br>");
+    echo("<label>Data urodzenia </label><input type="date" name="data_urodzenia"></br>");
+    echo("<input type="submit" value="Dodaj pracownika">");
+    echo("</form>");
+
+    echo("<br>");
+
+    echo("<h3>Usuwanie pracownika</h3>");
+    echo("<form action="/pracownicy/delete.php" method="POST">");
+    echo("<label>ID pracownika </label><input type="number" name="id"></br>");
+    echo("<input type="submit" value="Usuń pracownika">");
+    echo("</form>");
+
 echo("<br>");
+
 echo("<h3>Tabela pracowników</h3>");
 $sql = "SELECT * FROM pracownicy";
 $wynik = mysqli_query($conn, $sql);
