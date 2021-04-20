@@ -16,6 +16,7 @@ echo $sql;
 
 if ($conn->query($sql) === TRUE) {
   echo "Record deleted successfully";
+  header('Location: https://znw.herokuapp.com/cssgrid/grid1/index.php');
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
