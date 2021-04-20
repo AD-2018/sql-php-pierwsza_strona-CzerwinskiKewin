@@ -2,7 +2,7 @@
 echo("jestes w delete.php <br>");
 echo $_POST['id'];
 
-require_once("../connect.php");
+require_once("../../connect.php");
 
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
