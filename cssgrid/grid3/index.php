@@ -43,7 +43,14 @@
             while($wiersz=mysqli_fetch_assoc($wynik))
             {
                 echo('<tr>');
-                echo('<td>'.$wiersz['id_system'].'</td>'.'<td>'.$wiersz['osoba'].'</td>'.'<td>'.$wiersz['rola'].'</td>');
+                echo('<td>'.$wiersz['id_system'].'</td>'.'<td>'.$wiersz['osoba'].'</td>'.'<td>'.$wiersz['rola'].'</td>'.'<td>
+	    
+                <form action="delsystem.php" method="POST">
+                  <input type="text" name="id" value="'.$wiersz['id_system'].'" hidden>
+                  <input type="submit" value="X">
+                </form>
+                
+                </td>');
                 echo('</tr>');
             }
 
@@ -74,7 +81,14 @@
             while($wiersz=mysqli_fetch_assoc($wynik))
             {
                 echo('<tr>');
-                echo('<td>'.$wiersz['id_rola'].'</td>'.'<td>'.$wiersz['rola'].'</td>');
+                echo('<td>'.$wiersz['id_rola'].'</td>'.'<td>'.$wiersz['rola'].'</td>'.'<td>
+	    
+                <form action="delrola.php" method="POST">
+                  <input type="text" name="id" value="'.$wiersz['id_rola'].'" hidden>
+                  <input type="submit" value="X">
+                </form>
+                
+                </td>');
                 echo('</tr>');
             }
 
@@ -102,7 +116,14 @@
             while($wiersz=mysqli_fetch_assoc($wynik))
             {
                 echo('<tr>');
-                echo('<td>'.$wiersz['id_osoba'].'</td>'.'<td>'.$wiersz['osoba'].'</td>');
+                echo('<td>'.$wiersz['id_osoba'].'</td>'.'<td>'.$wiersz['osoba'].'</td>'.'<td>
+	    
+                <form action="delosoba.php" method="POST">
+                  <input type="text" name="id" value="'.$wiersz['id_osoba'].'" hidden>
+                  <input type="submit" value="X">
+                </form>
+                
+                </td>'););
                 echo('</tr>');
             }
 

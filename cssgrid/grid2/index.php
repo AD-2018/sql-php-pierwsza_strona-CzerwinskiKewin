@@ -43,7 +43,14 @@
             while($wiersz=mysqli_fetch_assoc($wynik))
             {
                 echo('<tr>');
-                echo('<td>'.$wiersz['id_prawnik'].'</td>'.'<td>'.$wiersz['prawnik'].'</td>');
+                echo('<td>'.$wiersz['id_prawnik'].'</td>'.'<td>'.$wiersz['prawnik'].'</td>'.'<td>
+	    
+                <form action="delprawnik.php" method="POST">
+                  <input type="text" name="id" value="'.$wiersz['id_prawnik'].'" hidden>
+                  <input type="submit" value="X">
+                </form>
+                
+                </td>');
                 echo('</tr>');
             }
 
@@ -69,12 +76,19 @@
             echo("<br>");
             echo($sql);
             echo('<table border="1">');
-            echo('<th>ID sprawy</th><th>Sprawa sadowa</th>');
+            echo('<th>ID sprawy</th><th>Sprawa sadowa</th><th>Usun</th>');
 
             while($wiersz=mysqli_fetch_assoc($wynik))
             {
                 echo('<tr>');
-                echo('<td>'.$wiersz['id_sprawa'].'</td>'.'<td>'.$wiersz['sprawa'].'</td>');
+                echo('<td>'.$wiersz['id_sprawa'].'</td>'.'<td>'.$wiersz['sprawa'].'</td>'.'<td>
+	    
+                <form action="delsprawa.php" method="POST">
+                  <input type="text" name="id" value="'.$wiersz['id_sprawa'].'" hidden>
+                  <input type="submit" value="X">
+                </form>
+                
+                </td>');
                 echo('</tr>');
             }
 
@@ -94,12 +108,19 @@
             echo("<br>");
             echo($sql);
             echo('<table border="1">');
-            echo('<th>ID</th><th>Prawnik</th><th>Sprawa sadowa</th>');
+            echo('<th>ID</th><th>Prawnik</th><th>Sprawa sadowa</th><th>Usun</th>');
 
             while($wiersz=mysqli_fetch_assoc($wynik))
             {
                 echo('<tr>');
-                echo('<td>'.$wiersz['id_kancelaria'].'</td>'.'<td>'.$wiersz['prawnik'].'</td>'.'<td>'.$wiersz['sprawa'].'</td>');
+                echo('<td>'.$wiersz['id_kancelaria'].'</td>'.'<td>'.$wiersz['prawnik'].'</td>'.'<td>'.$wiersz['sprawa'].'</td>'.'<td>
+	    
+                <form action="delkancelaria.php" method="POST">
+                  <input type="text" name="id" value="'.$wiersz['id_kancelaria'].'" hidden>
+                  <input type="submit" value="X">
+                </form>
+                
+                </td>');
                 echo('</tr>');
             }
 
