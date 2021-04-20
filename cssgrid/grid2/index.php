@@ -53,7 +53,9 @@
       ?>
       </header>
       <nav>
-        2
+        <?php
+          include_once("delsubmit.php");
+        ?>
       </nav>
 
       <main>

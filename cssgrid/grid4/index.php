@@ -107,7 +107,9 @@
       ?>
       </aside>
       <footer>
-        4
+        <?php
+          include_once("delsubmit.php");
+        ?>
       </footer>
     </div>
   </body>
