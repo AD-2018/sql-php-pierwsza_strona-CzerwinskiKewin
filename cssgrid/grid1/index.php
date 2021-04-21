@@ -9,24 +9,9 @@
   </head>
   <body>
     <div class="container">
-      <div class="linki">
-            <br>
-            <br>
-            <br>
-            <a class="link" href="/index.php">Menu</a><br><br>
-            <a class="link" href="/cssgrid/grid1/index.php">Grid 1</a><br><br>
-            <a class="link" href="/cssgrid/grid2/index.php">Grid 2</a><br><br>
-            <a class="link" href="/cssgrid/grid3/index.php">Grid 3</a><br><br>
-            <a class="link" href="/cssgrid/grid4/index.php">Grid 4</a><br><br>
-            <a class="link" href="/cssgrid/grid5/index.html">Grid 5</a><br><br>
-            <a class="link" href="/cssgrid/grid6/index.html">Grid 6</a><br><br>
-            <a class="link" href="/cssgrid/grid7/index.html">Grid 7</a><br><br>
-            <a class="link" href="/cssgrid/grid8/index.html">Grid 8</a><br><br>
-            <a class="link" href="/cssgrid/grid9/index.html">Grid 9</a><br><br>
-            <a class="link" href="/cssgrid/grid10/index.html">Grid 10</a><br><br>
-            <a class="link" href="/cssgrid/grid11/index.html">Grid 11</a><br><br>
-            <a class="link" href="/cssgrid/grid12/index.html">Grid 12</a><br><br>
-      </div>
+        <?php
+          include_once("/cssgrid/menugrid.php");
+        ?>
       <header>
       <?php
         require_once("../../connect.php");
