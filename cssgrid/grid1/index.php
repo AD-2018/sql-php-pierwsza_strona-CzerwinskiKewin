@@ -10,7 +10,7 @@
   <body>
     <div class="container">
         <?php
-          include_once("/cssgrid/menugrid.php");
+          include_once("menugrid.php");
         ?>
       <header>
       <?php
