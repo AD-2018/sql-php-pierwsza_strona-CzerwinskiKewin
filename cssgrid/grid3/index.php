@@ -38,7 +38,7 @@
             echo("<br>");
             echo($sql);
             echo('<table border="1">');
-            echo('<th>ID</th><th>Osoba</th><th>Rola</th>');
+            echo('<th>ID</th><th>Osoba</th><th>Rola</th><th>Usun</th>');
 
             while($wiersz=mysqli_fetch_assoc($wynik))
             {
@@ -76,7 +76,7 @@
             echo("<br>");
             echo($sql);
             echo('<table border="1">');
-            echo('<th>ID roli</th><th>Rola</th>');
+            echo('<th>ID roli</th><th>Rola</th><th>Usun</th>');
 
             while($wiersz=mysqli_fetch_assoc($wynik))
             {
@@ -111,7 +111,7 @@
             echo("<br>");
             echo($sql);
             echo('<table border="1">');
-            echo('<th>ID osoby</th><th>Osoba</th>');
+            echo('<th>ID osoby</th><th>Osoba</th><th>Usun</th>');
 
             while($wiersz=mysqli_fetch_assoc($wynik))
             {
@@ -123,7 +123,7 @@
                   <input type="submit" value="X">
                 </form>
                 
-                </td>'););
+                </td>');
                 echo('</tr>');
             }
 

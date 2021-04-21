@@ -38,7 +38,7 @@
             echo("<br>");
             echo($sql);
             echo('<table border="1">');
-            echo('<th>ID prawnika</th><th>Prawnik</th>');
+            echo('<th>ID prawnika</th><th>Prawnik</th><th>Usun</th>');
 
             while($wiersz=mysqli_fetch_assoc($wynik))
             {
